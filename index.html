@@ -1,540 +1,320 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<!--Head-->
 <head>
-  <meta charset="utf-8">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="google-site-verification" content="GZh2jRE6IgVXx8SYpoRZYwcs4_Wy7vWEAeSIHCs3UE8"/>
+    <meta name="baidu-site-verification" content="5EmnBCPDrY" />
+    
+    <title>叨逼叨 | Hexo</title>
+    <!--一言-->
+    <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+    <!--mdui-->
+    
+<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.2/css/mdui.min.css">
 
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+    
+<script src="//cdnjs.loli.net/ajax/libs/mdui/0.4.2/js/mdui.min.js"></script>
 
+    <!--jquery-->
+    
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <!--theme-->
+    
+<link rel="stylesheet" href="/css/mdm.css">
+
+    
+<link rel="stylesheet" href="/css/mdm_theme_dark.css">
+
+    
+<script src="/js/mdm.js"></script>
+
+    
+    <!--高亮-->
+    
+<link rel="stylesheet" href="/css/solarized-light.css">
+
+    <!--全局变灰-->
+    
+
+    
+    
+<script src="/js/click-effect.js"></script>
+
+    
+
+    <!--本地搜索-->
+    <!-- <script src="js/search.js"></script> -->
+    <!--自动提交给百度-->
+    
+    <script>
+        (function(){
+            var bp = document.createElement('script');
+            var curProtocol = window.location.protocol.split(':')[0];
+            if (curProtocol === 'https') {
+                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            }
+            else {
+                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            }
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(bp, s);
+        })();
+    </script>
+    
+
+    <!---google ad config-->
+    
+        <script data-ad-client="ca-pub-8181303774570877" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    
 <meta name="generator" content="Hexo 5.1.1"></head>
+<!--header_bar-->
+<div class="mdui-appbar mdui-shadow-0" id="bar">
+    <div class="mdui-toolbar mdui-text-color-white">
+        <a class="mdui-btn mdui-btn-icon mdui-hidden-sm-up" mdui-menu="{target: '#example-2'}">
+            <i class="mdui-icon material-icons">menu</i>
+        </a>
+        <ul class="mdui-menu" id="example-2">
+        
+            <li class="mdui-menu-item">
+            <a href="/" class="mdui-ripple">
+                <i class="mdui-menu-item-icon mdui-icon material-icons">home</i>
+                首页
+            </a>
+            </li>
+            <li class="mdui-divider"></li>
+        
+            <li class="mdui-menu-item">
+            <a href="/tags" class="mdui-ripple">
+                <i class="mdui-menu-item-icon mdui-icon material-icons">local_offer</i>
+                标签
+            </a>
+            </li>
+            <li class="mdui-divider"></li>
+        
+            <li class="mdui-menu-item">
+            <a href="/archives" class="mdui-ripple">
+                <i class="mdui-menu-item-icon mdui-icon material-icons">library_books</i>
+                归档
+            </a>
+            </li>
+            <li class="mdui-divider"></li>
+        
+            <li class="mdui-menu-item">
+            <a href="/video" class="mdui-ripple">
+                <i class="mdui-menu-item-icon mdui-icon material-icons">videocam</i>
+                视频
+            </a>
+            </li>
+            <li class="mdui-divider"></li>
+        
+            <li class="mdui-menu-item">
+            <a href="/about" class="mdui-ripple">
+                <i class="mdui-menu-item-icon mdui-icon material-icons">error_outline</i>
+                关于
+            </a>
+            </li>
+            <li class="mdui-divider"></li>
+        
+        </ul>
+        <!--大屏-->
+        
+        <a href="/"
+            class="mdui-typo-title mdui-ripple mdui-ripple-white mdui-hidden-xs">
+            首页
+        </a>
+        
+        <a href="/tags"
+            class="mdui-typo-title mdui-ripple mdui-ripple-white mdui-hidden-xs">
+            标签
+        </a>
+        
+        <a href="/archives"
+            class="mdui-typo-title mdui-ripple mdui-ripple-white mdui-hidden-xs">
+            归档
+        </a>
+        
+        <a href="/video"
+            class="mdui-typo-title mdui-ripple mdui-ripple-white mdui-hidden-xs">
+            视频
+        </a>
+        
+        <a href="/about"
+            class="mdui-typo-title mdui-ripple mdui-ripple-white mdui-hidden-xs">
+            关于
+        </a>
+        
+        <div class="mdui-toolbar-spacer"></div>
+        <!--
+        <div class="mdui-textfield mdui-textfield-expandable" style="max-width:500px;margin-right: -10px;">
+            <button class="mdui-textfield-icon mdui-btn mdui-btn-icon">
+                <i class="mdui-icon material-icons">search</i>
+            </button>
+            <input class="mdui-textfield-input mdui-text-color-white" id="local-search-input" type="text" placeholder="输入搜索内容..."/>
+            <button class="mdui-textfield-close mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">close</i></button>
+        </div>-->
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
+        <button onclick="themeChange()"
+                class="mdui-btn mdui-btn-icon mdui-ripple mdui-text-color-white" 
+                mdui-tooltip="{content: '切换亮/暗色模式'}">
+            <i class="mdui-icon material-icons" id="themeIcon">brightness_7</i>
+        </button>
+        <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-menu="{target: '#share_menu'}">
+            <i class="mdui-icon material-icons">share</i>
+        </button>
+        <ul class="mdui-menu" id="share_menu">
+            
+                <li class="mdui-menu-item">
+                    <button class="mdui-btn mdui-ripple mdui-btn-block" onclick="">
+                        QQ
+                    </button>
+                </li>
+            
+            </ul>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+</div>
+<!--Header-->
+<header>
+    <div class="mdui-card-media" style="overflow: hidden;">
         
-          <a class="main-nav-link" href="/">Home</a>
+        <img src="https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/main/img1.jpg" class="header-box mdui-img-fluid" draggable="false">
         
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
+            <div class="header-content">
+                
+                <span class="header_title">Hexo</span></br>
+                
+                <p id="hitokoto">一言加载中...</p>
+            </div>
+        </img>
     </div>
-  </div>
 </header>
-      <div class="outer">
-        <section id="main">
+<body>
+  <div class="mdui-center" id="content-inner" style="width:95%; max-width:700pt;">
+    
+<div class="mdui-center" style="width:95%;max-width:550pt;">
+  <h3>全部文章</h3>
+</div>
+
+<div id="recent-posts" class="mdui-center">
   
-    <article id="post-叨逼叨" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/09/13/%E5%8F%A8%E9%80%BC%E5%8F%A8/" class="article-date">
-  <time datetime="2020-09-13T13:56:21.212Z" itemprop="datePublished">2020-09-13</time>
-</a>
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/13/%E5%8F%A8%E9%80%BC%E5%8F%A8/">叨逼叨</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="xxr’s-blog"><a href="#xxr’s-blog" class="headerlink" title="xxr’s blog"></a>xxr’s blog</h3><pre><code class="java">public static void main(String[] args)&#123;
-    System.out.println(&quot;hello hexo&quot;);
-&#125;
-
-
-</code></pre>
-
-      
+      <div id="post-item" class="mdui-shadow-1 mdui-center mdui-ripple mdui-hoverable">
+    <div class="mdui-card-media">
+        <img class="img_item mdui-img-fluid" src="" onerror="{this.src='https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/main/img1.jpg'}" draggable="false">
+        <div class="mdui-card-menu">
+            <!-- <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">share</i></button> -->
+        </div>
+        <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
+            <div class="mdui-card-primary">
+                <div class="title_font float_left mdui-card-primary-title">
+                    叨逼叨
+                </div>
+            </div>
+        </div>
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/09/13/%E5%8F%A8%E9%80%BC%E5%8F%A8/" data-id="ckf2pkuf90001gr9yfnehf6ej" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/09/13/hello-world/" class="article-date">
-  <time datetime="2020-09-13T12:30:46.848Z" itemprop="datePublished">2020-09-13</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <div class="mdui-card-actions">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/09/13/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
+        <div class="mdui-divider"></div>
+        <span class="info">
+        <i class="mdui-icon material-icons">&#xe923;</i>
+        2020-09-13
+        
+    </span>
+        <a class="info mdui-text-color-pink " href="/2020/09/13/%E5%8F%A8%E9%80%BC%E5%8F%A8/" style="float:right;">去围观</a>
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/09/13/hello-world/" data-id="ckf2pkuf50000gr9yg1181bwa" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
+</div>           
+    
   
-</article>
-
-
-  
-    <article id="post-README" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/08/09/README/" class="article-date">
-  <time datetime="2020-08-09T10:25:01.000Z" itemprop="datePublished">2020-08-09</time>
-</a>
     
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200525115147.png" alt="Logo"></p>
-<br/>
-
-<p align="center">
-  <a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual#%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7">
-        <img src="https://img.shields.io/badge/微信公众号-码出Offer-yellow.svg" alt="License">
-    </a>
-  <a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual#%E8%AF%BB%E8%80%85%E7%A6%8F%E5%88%A9">
-        <img src="https://img.shields.io/badge/读者福利-领取-green.svg" alt="License">
-    </a>
-  <a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20repositories">
-        <img src="https://img.shields.io/badge/Maven仓库-打包 | 查看-orange.svg" alt="License">
-    </a>
-    <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44170221">
-        <img src="https://img.shields.io/badge/CSDN-关注-red.svg" alt="License">
-    </a>
-    <a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual">
-        <img src="https://img.shields.io/badge/System-Building...-inactive.svg" alt="License">
-    </a>
-</p>
-
-
-
-
-
-
-<br />
-
-<br />
-
-<h2 id="📌送给大家的一段话"><a href="#📌送给大家的一段话" class="headerlink" title="📌送给大家的一段话"></a>📌<strong>送给大家的一段话</strong></h2><p><strong>持续努力，变平凡为不凡：</strong> 梦想与现实之间的巨大落差常令人烦躁不安。然而，人生就是”今天”的不断积累，就是“现在”这一刻的不断延续，如此而已。不错过今天，认真工作就能看清明天，明天再认真工作就能看清后面的一周，一周认真工作，就能看清后面的一月…就是说，即使不去探索遥远的未来，只要全身贯注于眼前的每一个瞬间，以前看不清楚的未来的景象就会自然地呈现在你眼前。 与其莫名其妙为明天而烦恼，与其苦思冥想去制定长远的计划，还不如全力过好今天这一天。这才是实现理想最切实的办法。 </p>
-<p align="right">——稻盛和夫《活着》 </p>
-
-<hr>
-<blockquote>
-<p><strong>微信公众号</strong> 搜索关注【<a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual#%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7">码出Offer</a>】领取读者福利和各种学习资源！</p>
-</blockquote>
-<hr>
-<h2 id="📚-JavaSE基础"><a href="#📚-JavaSE基础" class="headerlink" title="📚  JavaSE基础"></a>📚  JavaSE基础</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E7%9A%84%E6%A6%82%E8%BF%B0%E4%B8%8E%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md">Java的概述与环境搭建教程</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80.md">Java的语言基础</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84%E4%B8%8E%E5%88%86%E6%94%AF%E7%BB%93%E6%9E%84.md">选择结构与分支结构</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84.md">循环结构和流程控制</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E5%87%BD%E6%95%B0.md">函数调用与递归思想</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E6%95%B0%E7%BB%84.md">一维数组与二维数组</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1.md">面向对象思想、类和构造方法基础</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7.md">面向对象三大特性（封装、继承、多态）</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E4%B8%89%E4%B8%AA%E4%BF%AE%E9%A5%B0%E7%AC%A6.md">三个修饰符（abstract、static、final）</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E6%8E%A5%E5%8F%A3.md">接口思想和接口回调</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E5%86%85%E9%83%A8%E7%B1%BB%E4%B8%8E%E5%B8%B8%E7%94%A8%E7%B1%BB.md">四大内部类、Object基类、String类</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E9%9B%86%E5%90%88.md">Java集合容器和泛型基础</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E5%BC%82%E5%B8%B8.md">Java的异常处理机制</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B.md">Java多线程入门</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/JavaIO%E6%B5%81.md">JavaIO流</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B.md">Java网络编程</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Junit%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95.md">Junit单元测试</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6.md">Java反射机制</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Javadoc%E6%96%87%E6%A1%A3%E7%94%9F%E6%88%90.md">Javadoc文档生成</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E6%B3%A8%E8%A7%A3.md">Java注解</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E6%9E%9A%E4%B8%BE.md">Java枚举</a></li>
-</ul>
-<h2 id="🛢数据库"><a href="#🛢数据库" class="headerlink" title="🛢数据库"></a>🛢数据库</h2><ul>
-<li><strong>MySQL数据库</strong> <ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL5.7%E8%A7%A3%E5%8E%8B%E7%89%88%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.md">MySQL5.7解压版安装教程</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93.md">MySQL数据库基础</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B.md">MySQL存储过程编程</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL%E8%A7%A6%E5%8F%91%E5%99%A8.md">MySQL触发器</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%8C%83%E5%BC%8F.md">数据库三大范式</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL%E5%9F%BA%E7%A1%80%E6%9E%B6%E6%9E%84.md">MySQL基础架构</a></li>
-<li>MySQL索引</li>
-<li></li>
-</ul>
-</li>
-<li>待添加…..</li>
-</ul>
-<h2 id="🎨前端开发"><a href="#🎨前端开发" class="headerlink" title="🎨前端开发"></a>🎨前端开发</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/HTML%E5%92%8CCSS%E5%9F%BA%E7%A1%80.md">HTML和CSS基础</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.md">正则表达式</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/JavaScript%E5%9F%BA%E7%A1%80%E4%B9%8BECMAScript.md">JavaScript基础之ECMAScript</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/JavaScript%E4%B9%8BBOM%E5%92%8CDOM%E6%93%8D%E4%BD%9C.md">JavaScript之BOM和DOM操作</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/JSON.md">JSON</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/Ajax.md">原生Ajax异步请求</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/jQuery.md">jQuery（包含jQuery Ajax）</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/Bootstrap.md">Bootstrap</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/BootstrapValidator%E6%A0%A1%E9%AA%8C.md">BootstrapValidator校验</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/Echarts.md">Echarts统计图表</a></li>
-<li>待添加……</li>
-</ul>
-<h2 id="💾WebServer"><a href="#💾WebServer" class="headerlink" title="💾WebServer"></a>💾WebServer</h2><ul>
-<li><strong>tomact服务器</strong> <ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Server/tomact%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9F%BA%E7%A1%80%E5%92%8C%E5%BC%80%E5%8F%91%E6%AD%A5%E9%AA%A4.md">tomact服务器基础和开发步骤</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Server/%E8%A7%A3%E5%86%B3tomact%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%B8%8EIDEA%E7%9A%84%E4%B8%80%E7%B3%BB%E5%88%97%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98.md">解决tomact客户端与IDEA的一系列乱码问题</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="📡计算机网络"><a href="#📡计算机网络" class="headerlink" title="📡计算机网络"></a>📡计算机网络</h2><ul>
-<li><strong>网络协议</strong> <ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Computer-Networks/HTTP%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE.md">HTTP网络协议</a></li>
-</ul>
-</li>
-</ul>
-<h2 id="💻-JavaWeb基础"><a href="#💻-JavaWeb基础" class="headerlink" title="💻  JavaWeb基础"></a>💻  JavaWeb基础</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/JavaWeb%E9%98%B6%E6%AE%B5%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB%E5%9B%BE.md">JavaWeb阶段知识体系图（总结）</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/JDBC%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5.md">JDBC数据库连接</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/Servlet%E5%9F%BA%E7%A1%80.md">Servlet基础</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/Servlet%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86.md">Servlet状态管理（Cookie、Session、ServletContext、Request）</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/BaseServlet%E6%A8%A1%E6%9D%BF.md">BaseServlet模板</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/Filter%E8%BF%87%E6%BB%A4%E5%99%A8.md">Filter过滤器</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/Listener%E7%9B%91%E5%90%AC%E5%99%A8.md">Listener监听器</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/JSP.md">JSP开发（EL表达式、JSTL标签库、分页）</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%92%8C%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD.md">文件上传和文件下载</a></li>
-<li>……</li>
-</ul>
-<h2 id="🆒Maven仓库"><a href="#🆒Maven仓库" class="headerlink" title="🆒Maven仓库"></a>🆒Maven仓库</h2><blockquote>
-<p>针对处在学习阶段的童鞋们，在此项目中建立了一个简单的jar包库，里面存储了学习阶段常用的jar包对应jar包的Utils工具类和配置文件，而且对jar包做了一系列使用说明。</p>
-<p>如果有需要下载jar包，点击Logo图标下的<code>Maven仓库</code>即可进入，也可以<a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20repositories"><strong>点击此处</strong></a>进入！</p>
-<p><strong>声明：</strong> 后期我们是通过Maven来引入依赖来实现jar包在项目中的使用，毕竟大家都得有一个循序渐进的学习过程，在使用Maven之前我们还是需要使用jar文件的。即使不使用jar文件，我们也得了解所需jar包的作用对吧，所以我建立了一个简单的jar包库来引导学习！</p>
-</blockquote>
-<ul>
-<li><strong>打包Maven本地仓库：</strong> 链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1pURaTi6RI3RGjgf7vgfIwQ">https://pan.baidu.com/s/1pURaTi6RI3RGjgf7vgfIwQ</a> 提取码：hk17</li>
-<li><strong>IDEA破解jar文件：</strong> 链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1ixgXOqxsbieWd8W8sJ9fQw">https://pan.baidu.com/s/1ixgXOqxsbieWd8W8sJ9fQw</a> 提取码：xbmr</li>
-</ul>
-<h2 id="🛠必会工具"><a href="#🛠必会工具" class="headerlink" title="🛠必会工具"></a>🛠必会工具</h2><ul>
-<li><strong>项目构建工具Maven</strong> <ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/Maven%E5%BA%94%E7%94%A8.md">Maven应用</a></li>
-</ul>
-</li>
-<li><strong>版本控制工具Git</strong> <ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/Git%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.md">Git安装教程</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/Git%E5%BA%94%E7%94%A8.md">Git应用</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/.gitignore%E6%A8%A1%E6%9D%BF.txt">.gitignore模板（Java）</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/%E8%A7%A3%E5%86%B3GitHub%E5%90%84%E7%A7%8D%E7%BC%93%E6%85%A2%E9%97%AE%E9%A2%98.md">解决GitHub各种缓慢问题方案</a></li>
-</ul>
-</li>
-<li>待添加……</li>
-</ul>
-<h2 id="🗜框架"><a href="#🗜框架" class="headerlink" title="🗜框架"></a>🗜框架</h2><ul>
-<li><strong>MyBatis</strong> <ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/MyBatis%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B.md">MyBatis基础开发流程</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/MyBatis%E6%A1%86%E6%9E%B6%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8.md">MyBatis高级应用</a></li>
-</ul>
-</li>
-<li><strong>Spring</strong> <ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/Spring%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md">Spring概述和基本环境搭建</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/SpringIOC.md">Spring IOC（控制反转）</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/SpringDI.md">Spring DI（依赖注入）</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/SpringAOP.md">Spring AOP（面向切面编程）</a></li>
-<li>待添加……</li>
-</ul>
-</li>
-<li><strong>SpringMVC</strong> <ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/SpringMVC%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B.md">SpringMVC执行流程（源码分析）</a></li>
-<li>待添加……</li>
-</ul>
-</li>
-<li><strong>SSM</strong> <ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/SSM%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88.md">SSM框架整合</a></li>
-</ul>
-</li>
-<li><strong>SpringBoot</strong> <ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/Springboot%E5%85%A5%E9%97%A8.md">Springboot入门</a></li>
-<li>Springboot整合</li>
-<li>待添加……</li>
-</ul>
-</li>
-</ul>
-<h2 id="⌨操作系统"><a href="#⌨操作系统" class="headerlink" title="⌨操作系统"></a>⌨操作系统</h2><ul>
-<li><strong>Linux</strong> <ul>
-<li>虚拟机与Linux安装教程（待添加……）</li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/operating-system/Linux%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8.md">Linux命令大全</a></li>
-<li>待添加……</li>
-</ul>
-</li>
-</ul>
-<h2 id="🗡中间件"><a href="#🗡中间件" class="headerlink" title="🗡中间件"></a>🗡中间件</h2><ul>
-<li><strong>Nginx</strong> <ul>
-<li>待添加……</li>
-</ul>
-</li>
-<li><strong>Redis</strong> <ul>
-<li>待添加……</li>
-</ul>
-</li>
-<li>待添加……</li>
-</ul>
-<h2 id="🏹分布式架构"><a href="#🏹分布式架构" class="headerlink" title="🏹分布式架构"></a>🏹分布式架构</h2><ul>
-<li>待添加……</li>
-</ul>
-<h2 id="⚔微服务架构"><a href="#⚔微服务架构" class="headerlink" title="⚔微服务架构"></a>⚔微服务架构</h2><ul>
-<li>待添加……</li>
-</ul>
-<h2 id="🔐并发编程"><a href="#🔐并发编程" class="headerlink" title="🔐并发编程"></a>🔐并发编程</h2><ul>
-<li><strong>多线程基础</strong> <ul>
-<li>待添加……</li>
-</ul>
-</li>
-<li>ThreadLocal源码分析</li>
-</ul>
-<h2 id="🔧IntelliJ-IDEA"><a href="#🔧IntelliJ-IDEA" class="headerlink" title="🔧IntelliJ IDEA"></a>🔧IntelliJ IDEA</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/IntelliJ-IDEA/IDEA%E5%AE%89%E8%A3%85%E7%A0%B4%E8%A7%A3%E6%95%99%E7%A8%8B.md">IDEA安装破解教程（勿传播）</a></li>
-<li>等待添加各种快捷键、常用设置、插件教程等等……</li>
-</ul>
-<h2 id="📐设计模式"><a href="#📐设计模式" class="headerlink" title="📐设计模式"></a>📐设计模式</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/design-mode/00.%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%9F%BA%E7%A1%80.md">00-设计模式基础</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/design-mode/01.%E5%8D%95%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md">01-单例设计模式</a></li>
-<li>待添加第二设计模式……</li>
-</ul>
-<h2 id="🏆Project"><a href="#🏆Project" class="headerlink" title="🏆Project"></a>🏆Project</h2><ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/tree/master/project/JavaWeb%E5%A9%9A%E7%A4%BC%E6%B1%87">【婚礼汇】（Servlet+JSP）</a></li>
-<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/tree/master/project/%E5%B0%8F%E7%B1%B3%E5%95%86%E5%9F%8E">【小米商城】（Servlet+JSP）</a></li>
-</ul>
-<h2 id="⏳数据结构与算法"><a href="#⏳数据结构与算法" class="headerlink" title="⏳数据结构与算法"></a>⏳数据结构与算法</h2><ul>
-<li>复杂度分析</li>
-<li>待添加……</li>
-</ul>
-<h2 id="📃LICENSE"><a href="#📃LICENSE" class="headerlink" title="📃LICENSE"></a>📃LICENSE</h2><blockquote>
-<p>本仓库知识体系受版权保护，大多数知识体系和技术文章都是由个人总结、整理、发文。如果您想引用本仓库知识内容或者对本仓库知识内容做了修改演绎时，请在文章开头明显处标明作者和本仓库地址，整理总结发文不易，请尊重原创！谢谢！</p>
-<p>公众号或与其他形式转载请联系   <strong>Email：</strong> ziphtracks@163.com</p>
-</blockquote>
-<h2 id="👣我的足迹"><a href="#👣我的足迹" class="headerlink" title="👣我的足迹"></a>👣我的足迹</h2><blockquote>
-<p>以下足迹创建时间先后不一，所以文章也不太一致，最早的是<strong>CSDN</strong> ，大家可以去逛逛！</p>
-<p>我会持续输出的，希望大家能多多关照，能够进去给我一个三连！</p>
-</blockquote>
-<ul>
-<li><strong>微信公众号：</strong> <a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual#%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7">码出Offer</a></li>
-<li><strong>GitHub：</strong> <a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual">https://github.com/Ziphtracks/JavaLearningmanual</a></li>
-<li><strong>CSDN：</strong> <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44170221">https://blog.csdn.net/weixin_44170221</a></li>
-<li><strong>掘金：</strong> <a target="_blank" rel="noopener" href="https://juejin.im/user/5e89c749f265da47f256085e">https://juejin.im/user/5e89c749f265da47f256085e</a></li>
-<li><strong>知乎：</strong> <a target="_blank" rel="noopener" href="https://www.zhihu.com/people/ziph">https://www.zhihu.com/people/ziph</a></li>
-<li><strong>博客园：</strong> <a target="_blank" rel="noopener" href="https://www.cnblogs.com/ziph/">https://www.cnblogs.com/ziph/</a></li>
-<li><strong>ProcessOn：</strong> <a target="_blank" rel="noopener" href="https://www.processon.com/u/5e3b6d68e4b0a3daae7d2de8/profile">https://www.processon.com/u/5e3b6d68e4b0a3daae7d2de8/profile</a></li>
-</ul>
-<h2 id="📩微信公众号"><a href="#📩微信公众号" class="headerlink" title="📩微信公众号"></a>📩微信公众号</h2><blockquote>
-<p>关于PDF版本文章电子书以及其他福利资料的的领取，请扫码关注微信公众号：<strong>码出Offer</strong>  </p>
-</blockquote>
-<p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200614165831.png" alt="微信公众号"></p>
-
-<h2 id="🎁读者福利"><a href="#🎁读者福利" class="headerlink" title="🎁读者福利"></a>🎁读者福利</h2><blockquote>
-<p>涉及到侵犯您的权力，请速与我联系，我将立即删除您的内容！<strong>Email：</strong> ziphtracks@163.com</p>
-</blockquote>
-<ul>
-<li><strong>自制电子书：</strong> 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1MCpGsrUR0TaBaDv8_G3OtA">https://pan.baidu.com/s/1MCpGsrUR0TaBaDv8_G3OtA</a> 提取码: sdby</li>
-<li><strong>学习辅助资料：</strong> 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1vXPe4uGkNhkm6AJ3xIRAvA">https://pan.baidu.com/s/1vXPe4uGkNhkm6AJ3xIRAvA</a> 提取码: chft</li>
-<li><strong>PDF版书籍：</strong> 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1eImeF0EkQBJonPOKsZGGcA">https://pan.baidu.com/s/1eImeF0EkQBJonPOKsZGGcA</a> 提取码: 3845</li>
-<li><strong>优质资料：</strong> <ul>
-<li><strong>丁奇MySQL实战45讲：</strong> 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1BQ4Eyv_hN5Jp6gVlrafqkA">https://pan.baidu.com/s/1BQ4Eyv_hN5Jp6gVlrafqkA</a> 提取码: s1ax</li>
-<li><strong>数据结构与算法之美：</strong> 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1Z0KW2v03s3x4zBwL6N_ZYA">https://pan.baidu.com/s/1Z0KW2v03s3x4zBwL6N_ZYA</a> 提取码: pfsp</li>
-<li><strong>Java核心技术36讲：</strong> 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1Cwtjg4z8lePuFF4RY-q_6A">https://pan.baidu.com/s/1Cwtjg4z8lePuFF4RY-q_6A</a> 提取码: x2ir</li>
-<li><strong>趣谈网络协议：</strong> 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1bqKsGlLvhKfo8VSlbflNxw">https://pan.baidu.com/s/1bqKsGlLvhKfo8VSlbflNxw</a> 提取码: n5uj</li>
-<li><strong>马士兵老师讲解设计模式：</strong> 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1JeWLd_9hbeKjHe8gTYze0g">https://pan.baidu.com/s/1JeWLd_9hbeKjHe8gTYze0g</a> 提取码: rr3d</li>
-</ul>
-</li>
-<li><strong>项目资源：</strong> <ul>
-<li><strong>小米商城项目：</strong> 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1LZQekIzA3KYjvwjy8hjIgA">https://pan.baidu.com/s/1LZQekIzA3KYjvwjy8hjIgA</a> 提取码: fa5g</li>
-</ul>
-</li>
-<li>持续向网盘内添加更新福利资源（Star和微信公众号关注一波好吗？兄弟姐妹们~）……</li>
-</ul>
-<h2 id="⚡充电打赏"><a href="#⚡充电打赏" class="headerlink" title="⚡充电打赏"></a>⚡充电打赏</h2><blockquote>
-<p>如果大家觉得文章还觉得不错，对你有所帮助的话。可以请Z哥喝一杯速溶咖啡哦！礼轻情意重嘛对不对！你的充电打赏，将是我创作的一大动力！Thank You！</p>
-<p><strong>郑重声明：</strong> Z哥，不接受没有收入来源的任何充电打赏，比如：还正在花着父母辛苦钱的学生，一旦打赏请速与我联系！</p>
-</blockquote>
-<p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200614174007.jpg" alt="微信赞赏码"></p>
-
-<h2 id="🙏鸣谢"><a href="#🙏鸣谢" class="headerlink" title="🙏鸣谢"></a>🙏鸣谢</h2><blockquote>
-<p>如果<a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual">JavaLearningmanual</a>中出现错误，请与我联系。如果建议或提议十分不错，予以采纳，我将给予适当的物质奖励，并将你纳入贡献者名单！提出小错误或小的建议也是OK的哦，也会纳入名单的哦！毕竟人无完人，也许写错别字或者知识琐碎问题对吧！期待你的来信！</p>
-</blockquote>
-<p>暂无无  </p>
-
-      
+      <div id="post-item" class="mdui-shadow-1 mdui-center mdui-ripple mdui-hoverable">
+    <div class="mdui-card-media">
+        <img class="img_item mdui-img-fluid" src="" onerror="{this.src='https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/main/img1.jpg'}" draggable="false">
+        <div class="mdui-card-menu">
+            <!-- <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">share</i></button> -->
+        </div>
+        <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
+            <div class="mdui-card-primary">
+                <div class="title_font float_left mdui-card-primary-title">
+                    Hello World
+                </div>
+            </div>
+        </div>
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2020/08/09/README/" data-id="ckf2q0z2c0000k89ycd2v8d6r" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-</section>
+    <div class="mdui-card-actions">
         
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/09/">September 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a></li></ul>
+        <div class="mdui-divider"></div>
+        <span class="info">
+        <i class="mdui-icon material-icons">&#xe923;</i>
+        2020-09-13
+        
+    </span>
+        <a class="info mdui-text-color-pink " href="/2020/09/13/hello-world/" style="float:right;">去围观</a>
     </div>
-  </div>
-
-
+</div>           
+    
   
     
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2020/09/13/%E5%8F%A8%E9%80%BC%E5%8F%A8/">叨逼叨</a>
-          </li>
-        
-          <li>
-            <a href="/2020/09/13/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2020/08/09/README/">(no title)</a>
-          </li>
-        
-      </ul>
+      <div id="post-item" class="mdui-shadow-1 mdui-center mdui-ripple mdui-hoverable">
+    <div class="mdui-card-media">
+        <img class="img_item mdui-img-fluid" src="" onerror="{this.src='https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/main/img1.jpg'}" draggable="false">
+        <div class="mdui-card-menu">
+            <!-- <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">share</i></button> -->
+        </div>
+        <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
+            <div class="mdui-card-primary">
+                <div class="title_font float_left mdui-card-primary-title">
+                    
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+    <div class="mdui-card-actions">
+        
+        <div class="mdui-divider"></div>
+        <span class="info">
+        <i class="mdui-icon material-icons">&#xe923;</i>
+        2020-08-09
+        
+    </span>
+        <a class="info mdui-text-color-pink " href="/2020/08/09/README/" style="float:right;">去围观</a>
+    </div>
+</div>           
+    
+  
+</div>
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2020 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
+
+<!--页码-->
+<div id="paginator">
+  <span class="page-number current">1</span>
+</div>
+</br>
+
   </div>
+  <!--footer-->
+  <footer class="mdui-color-indigo">
+    <div class="mdui-container">
+        <div style="text-align: center; padding: 20px;">
+            <div >
+                Copyright &copy;
+                John Doe&nbsp&nbsp2020
+                &nbspTheme By
+                <a target="_blank" rel="noopener" href="https://github.com/TonyChenn/hexo-theme-mdm">mdm</a>
+                <iframe style="margin-left: 2px; margin-bottom:-5px;" 
+                        src="https://ghbtns.com/github-btn.html?user=TonyChenn&repo=hexo-theme-mdm&type=star&count=true" 
+                        frameborder="0" scrolling="0" width="91px" height="20px">
+                </iframe>
+            </div>
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+        总访问量 <span id="busuanzi_value_site_pv"></span> 次&nbsp&nbsp&nbsp总访客<span id="busuanzi_value_site_uv"></span>人
+        </div>
+    </div>
 </footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-  </div>
 </body>
+<!--goTop-->
+<div class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-pink">
+    <i class="mdui-icon material-icons">arrow_upward</i>
+</div>
 </html>
