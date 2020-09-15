@@ -1,259 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-<!--Head-->
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="google-site-verification" content="GZh2jRE6IgVXx8SYpoRZYwcs4_Wy7vWEAeSIHCs3UE8"/>
-    <meta name="baidu-site-verification" content="5EmnBCPDrY" />
-    
-    <title>叨逼叨 | Hexo</title>
-    <!--一言-->
-    <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
-    <!--mdui-->
-    
-<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/mdui/0.4.2/css/mdui.min.css">
+{% extends './includes/base.swig' %}
 
-    
-<script src="//cdnjs.loli.net/ajax/libs/mdui/0.4.2/js/mdui.min.js"></script>
+{% block content %}
+    <div class="al_index_background dis_flex_center al_full_cover">
+        <div class="al_pos_ab al_letter al_index_background_letter">
+            {{ config.bio|default('A Simple Theme')|first|upper }}
+        </div>
+        <h2 class="al_index_background_bio">
+            {{ config.bio|default('A Simple Theme') }}
+        </h2>
+    </div>
 
-    <!--jquery-->
-    
-<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <div class="al_index_container">
+        <div class="al_pos_ab al_fake_background"></div>
+        <div class="al_main_container al_shadow">
+            <div class="al_section_container dis_flex_jcenter">
+                <div class="section_header">
+                    LATEST PAGES
+                </div>
+            </div>
 
-    <!--theme-->
-    
-<link rel="stylesheet" href="/css/mdm.css">
+            <ul class="al_post_list">
+                {% for item in page.posts %}
+                    <li class="al_index_pageList_item al_index_page_seperator">
+                        <div class="al_index_post_title_cnt dis_flex">
+                            <div class="al_pos_ab al_letter al_index_post_title_letter">
+                                {{ item.title|default('No Title')|first|upper }}
+                            </div>
+                            <h2 class="al_index_post_title">
+                                <a href="{{ url_for(item.link || item.path) }}">
+                                    {{ item.title|default('No Title') }}
+                                </a>
+                            </h2>
+                            <div class="al_index_post_extra dis_flex">
+                                <div class="al_index_post_date al_index_post_extra_item">
+                                    {{ item.date|date('F d') }}
+                                </div>
 
-    
-<link rel="stylesheet" href="/css/mdm_theme_dark.css">
+                                {% if min2read %}
+                                    <div class="al_index_post_read_time">
+                                        {{ min2read(item.content) }} Min Read
+                                    </div>
+                                {% endif %}
 
-    
-<script src="/js/mdm.js"></script>
-
-    
-    <!--高亮-->
-    
-<link rel="stylesheet" href="/css/solarized-light.css">
-
-    <!--全局变灰-->
-    
-
-    
-    
-<script src="/js/click-effect.js"></script>
-
-    
-
-    <!--本地搜索-->
-    <!-- <script src="js/search.js"></script> -->
-    <!--自动提交给百度-->
-    
-    <script>
-        (function(){
-            var bp = document.createElement('script');
-            var curProtocol = window.location.protocol.split(':')[0];
-            if (curProtocol === 'https') {
-                bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-            }
-            else {
-                bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-            }
-            var s = document.getElementsByTagName("script")[0];
-            s.parentNode.insertBefore(bp, s);
-        })();
-    </script>
-    
-
-    <!---google ad config-->
-    
-        <script data-ad-client="ca-pub-8181303774570877" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    
-<meta name="generator" content="Hexo 5.1.1"></head>
-<!--header_bar-->
-<div class="mdui-appbar mdui-shadow-0" id="bar">
-    <div class="mdui-toolbar mdui-text-color-white">
-        <a class="mdui-btn mdui-btn-icon mdui-hidden-sm-up" mdui-menu="{target: '#example-2'}">
-            <i class="mdui-icon material-icons">menu</i>
-        </a>
-        <ul class="mdui-menu" id="example-2">
-        
-            <li class="mdui-menu-item">
-            <a href="/" class="mdui-ripple">
-                <i class="mdui-menu-item-icon mdui-icon material-icons">home</i>
-                首页
-            </a>
-            </li>
-            <li class="mdui-divider"></li>
-        
-            <li class="mdui-menu-item">
-            <a href="/tags" class="mdui-ripple">
-                <i class="mdui-menu-item-icon mdui-icon material-icons">local_offer</i>
-                标签
-            </a>
-            </li>
-            <li class="mdui-divider"></li>
-        
-            <li class="mdui-menu-item">
-            <a href="/archives" class="mdui-ripple">
-                <i class="mdui-menu-item-icon mdui-icon material-icons">library_books</i>
-                归档
-            </a>
-            </li>
-            <li class="mdui-divider"></li>
-        
-            <li class="mdui-menu-item">
-            <a href="/video" class="mdui-ripple">
-                <i class="mdui-menu-item-icon mdui-icon material-icons">videocam</i>
-                视频
-            </a>
-            </li>
-            <li class="mdui-divider"></li>
-        
-            <li class="mdui-menu-item">
-            <a href="/about" class="mdui-ripple">
-                <i class="mdui-menu-item-icon mdui-icon material-icons">error_outline</i>
-                关于
-            </a>
-            </li>
-            <li class="mdui-divider"></li>
-        
-        </ul>
-        <!--大屏-->
-        
-        <a href="/"
-            class="mdui-typo-title mdui-ripple mdui-ripple-white mdui-hidden-xs">
-            首页
-        </a>
-        
-        <a href="/tags"
-            class="mdui-typo-title mdui-ripple mdui-ripple-white mdui-hidden-xs">
-            标签
-        </a>
-        
-        <a href="/archives"
-            class="mdui-typo-title mdui-ripple mdui-ripple-white mdui-hidden-xs">
-            归档
-        </a>
-        
-        <a href="/video"
-            class="mdui-typo-title mdui-ripple mdui-ripple-white mdui-hidden-xs">
-            视频
-        </a>
-        
-        <a href="/about"
-            class="mdui-typo-title mdui-ripple mdui-ripple-white mdui-hidden-xs">
-            关于
-        </a>
-        
-        <div class="mdui-toolbar-spacer"></div>
-        <!--
-        <div class="mdui-textfield mdui-textfield-expandable" style="max-width:500px;margin-right: -10px;">
-            <button class="mdui-textfield-icon mdui-btn mdui-btn-icon">
-                <i class="mdui-icon material-icons">search</i>
-            </button>
-            <input class="mdui-textfield-input mdui-text-color-white" id="local-search-input" type="text" placeholder="输入搜索内容..."/>
-            <button class="mdui-textfield-close mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">close</i></button>
-        </div>-->
-
-        <button onclick="themeChange()"
-                class="mdui-btn mdui-btn-icon mdui-ripple mdui-text-color-white" 
-                mdui-tooltip="{content: '切换亮/暗色模式'}">
-            <i class="mdui-icon material-icons" id="themeIcon">brightness_7</i>
-        </button>
-        <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-menu="{target: '#share_menu'}">
-            <i class="mdui-icon material-icons">share</i>
-        </button>
-        <ul class="mdui-menu" id="share_menu">
-            
-                <li class="mdui-menu-item">
-                    <button class="mdui-btn mdui-ripple mdui-btn-block" onclick="">
-                        QQ
-                    </button>
-                </li>
-            
+                            </div>
+                        </div>
+                        <div class="al_index_post_excerpt_cnt">
+                            <p class="al_index_post_excerpt">
+                                {{ item.excerpt|striptags }}
+                            </p>
+                        </div>
+                        <div class="al_index_post_button_cnt dis_flex">
+                            <a class="al_button al_button_theme al_index_post_button" href="{{ item.link || item.path }}">
+                                READ ON
+                            </a>
+                            <a class="al_button al_button_transparent al_index_post_button" target="_blank" rel="noopener" href="//getpocket.com/edit?url={{ config.url + '/' + postURL }}">
+                                READ LATER
+                            </a>
+                        </div>
+                    </li>
+                {% endfor %}
             </ul>
-    </div>
-</div>
-<!--Header-->
-<header>
-    <div class="mdui-card-media" style="overflow: hidden;">
-        
-        <img src="https://cdn.jsdelivr.net/gh/TonyChenn/BlogPicture/main/img1.jpg" class="header-box mdui-img-fluid" draggable="false">
-        
-            <div class="header-content">
-                
-                <span class="header_title">Hexo</span></br>
-                
-                <p id="hitokoto">一言加载中...</p>
-            </div>
-        </img>
-    </div>
-</header>
-<body>
-  <div class="mdui-center" id="content-inner" style="width:95%; max-width:700pt;">
-    <!-- 归档列表 -->
 
- <!--归档列表 -->
-<div class="mdui-center post-content">
-  <h1>归档</h1>
-  <div class="mdui-panel" mdui-panel="{accordion : true}">
-    
-          <div class="mdui-panel-item">
-            <div class="mdui-panel-item-header">
-              <div class="mdui-panel-item-title" id="2020">2020</div>
-              <div class="mdui-panel-item-summary">共3篇</div>
-              <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-            </div>
-            <div class="mdui-panel-item-body mdui-typo">
-                
-                  <span class="mdui-panel-item-summary post-time">
-                    09-13
-                  </span>
-                  <a class="mdui-panel-item-summary post-name" href="/2020/09/13/%E5%8F%A8%E9%80%BC%E5%8F%A8/">叨逼叨</a>
-                <hr>
-                
-                  <span class="mdui-panel-item-summary post-time">
-                    09-13
-                  </span>
-                  <a class="mdui-panel-item-summary post-name" href="/2020/09/13/hello-world/">Hello World</a>
-                <hr>
-                
-                  <span class="mdui-panel-item-summary post-time">
-                    08-09
-                  </span>
-                  <a class="mdui-panel-item-summary post-name" href="/2020/08/09/README/">Untitled</a>
-                <hr>
-                
-            </div>
-          </div>
-    
-  </div>
-</div>
-</br></br></br>
-  </div>
-  <!--footer-->
-  <footer class="mdui-color-indigo">
-    <div class="mdui-container">
-        <div style="text-align: center; padding: 20px;">
-            <div >
-                Copyright &copy;
-                John Doe&nbsp&nbsp2020
-                &nbspTheme By
-                <a target="_blank" rel="noopener" href="https://github.com/TonyChenn/hexo-theme-mdm">mdm</a>
-                <iframe style="margin-left: 2px; margin-bottom:-5px;" 
-                        src="https://ghbtns.com/github-btn.html?user=TonyChenn&repo=hexo-theme-mdm&type=star&count=true" 
-                        frameborder="0" scrolling="0" width="91px" height="20px">
-                </iframe>
-            </div>
-        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-        总访问量 <span id="busuanzi_value_site_pv"></span> 次&nbsp&nbsp&nbsp总访客<span id="busuanzi_value_site_uv"></span>人
+            <nav class="dis_flex al_post_nav">
+                <a class="al_post_nav_item dis_flex_acenter" href="{{ page.next_link || '/' }}">
+                    {% if page.prev !== 0 %}
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-left"></use>
+                        </svg>
+                        <span>Newer Posts</span>
+                    {% endif %}
+                </a>
+                <a class="al_post_nav_item dis_flex_acenter" href="{{ page.next_link || '/' }}">
+                    {% if page.next !== 0 %}
+                        <span>Older Posts</span>
+                        <svg class="al_arrow">
+                            <use xmlns="http://www.w3.org/2000/svg" xlink:href="/assets/svg_icons.svg#svg-arrow-right"></use>
+                        </svg>
+                    {% endif %}
+                </a>
+            </nav>
         </div>
     </div>
-</footer>
-</body>
-<!--goTop-->
-<div class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-pink">
-    <i class="mdui-icon material-icons">arrow_upward</i>
-</div>
-</html>
+{% endblock %}
