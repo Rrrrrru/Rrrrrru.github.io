@@ -1,289 +1,1151 @@
 
 <!DOCTYPE html>
-<html lang="en" class="loading">
+<html lang="en">
+    
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hexo">
     <title>Hexo</title>
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="google" content="notranslate" />
-    <meta name="keywords" content="Fechin,"> 
-    
-    <meta name="author" content="John Doe"> 
-    <link rel="alternative" href="atom.xml" title="Hexo" type="application/atom+xml"> 
-    <link rel="icon" href="/img/favicon.png"> 
+    <meta name="author" content="John Doe">
     
     
-<link rel="stylesheet" href="/css/diaspora.css">
+    
+    <script type="application/ld+json">{"@context":"http://schema.org","@type":"Website","@id":"http://example.com","author":{"@type":"Person","name":"John Doe","sameAs":["https://github.com/","http://stackoverflow.com/users","https://twitter.com/","https://facebook.com/","https://plus.google.com/","https://www.linkedin.com/profile/","mailto"]},"name":"Hexo","description":"","url":"http://example.com"}</script>
+    <meta property="og:type" content="blog">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="en_US">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+    
+    
+        
+    
+    
+    
+    
+    
+    <!--STYLES-->
+    
+<link rel="stylesheet" href="/assets/css/all.css">
 
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({
-              google_ad_client: "ca-pub-8691406134231910",
-              enable_page_level_ads: true
-         });
-    </script>
-    <script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-    </script>
-<meta name="generator" content="Hexo 5.1.1"></head>
+    
+<link rel="stylesheet" href="/assets/css/jquery.fancybox.css">
 
-<body class="loading">
-    <span id="config-title" style="display:none">Hexo</span>
-    <div id="loader"></div>
-    <div class="nav">
-    <ul id="menu-menu" class="menu">
+    
+<link rel="stylesheet" href="/assets/css/thumbs.css">
+
+    
+<link rel="stylesheet" href="/assets/css/tranquilpeak.css">
+
+    <!--STYLES END-->
+    
+
+    
+
+    
+</head>
+
+    <body>
+        <div id="blog">
+            <!-- Define author's picture -->
+
+
+    
+
+<header id="header" data-behavior="1">
+    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+    <div class="header-title">
+        <a
+            class="header-title-link"
+            href="/"
+            aria-label=""
+        >
+            Hexo
+        </a>
+    </div>
+    
         
-        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="//" title="首页" target="_blank" rel="noopener">首页</a>
-        </li>
+            <a
+                class="header-right-picture "
+                href="#about"
+                aria-label="Open the link: /#about"
+            >
         
-        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="/categories/" title="分类" target="_blank" rel="noopener">分类</a>
-        </li>
         
-        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="/tags/" title="标签" target="_blank" rel="noopener">标签</a>
-        </li>
+        </a>
+    
+</header>
+
+            <!-- Define author's picture -->
+
+
+<nav id="sidebar" data-behavior="1">
+    <div class="sidebar-container">
         
-        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="/archives/" title="归档" target="_blank" rel="noopener">归档</a>
-        </li>
         
-        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
-            <a href="/about/" title="关于" target="_blank" rel="noopener">关于</a>
-        </li>
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="/"
+                            
+                            rel="noopener"
+                            title="Home"
+                        >
+                        <i class="sidebar-button-icon fa fa-home" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Home</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="/all-categories"
+                            
+                            rel="noopener"
+                            title="Categories"
+                        >
+                        <i class="sidebar-button-icon fa fa-bookmark" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Categories</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="/all-tags"
+                            
+                            rel="noopener"
+                            title="Tags"
+                        >
+                        <i class="sidebar-button-icon fa fa-tags" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Tags</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="/all-archives"
+                            
+                            rel="noopener"
+                            title="Archives"
+                        >
+                        <i class="sidebar-button-icon fa fa-archive" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Archives</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link open-algolia-search"
+                            href="#search"
+                            
+                            rel="noopener"
+                            title="Search"
+                        >
+                        <i class="sidebar-button-icon fa fa-search" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Search</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="#about"
+                            
+                            rel="noopener"
+                            title="About"
+                        >
+                        <i class="sidebar-button-icon fa fa-question" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">About</span>
+                    </a>
+            </li>
+            
+        </ul>
         
-    </ul>
-	<span class="target"></span>
-	<center>
-	<div class="hitokoto">
-		<span class="typed" id="hitokoto" data-st="true"></span>
-	</div>
-	</center>
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="https://github.com/"
+                            
+                                target="_blank"
+                            
+                            rel="noopener"
+                            title="GitHub"
+                        >
+                        <i class="sidebar-button-icon fab fa-github" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">GitHub</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="http://stackoverflow.com/users"
+                            
+                                target="_blank"
+                            
+                            rel="noopener"
+                            title="Stack Overflow"
+                        >
+                        <i class="sidebar-button-icon fab fa-stack-overflow" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Stack Overflow</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="https://twitter.com/"
+                            
+                                target="_blank"
+                            
+                            rel="noopener"
+                            title="Twitter"
+                        >
+                        <i class="sidebar-button-icon fab fa-twitter" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Twitter</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="https://facebook.com/"
+                            
+                                target="_blank"
+                            
+                            rel="noopener"
+                            title="Facebook"
+                        >
+                        <i class="sidebar-button-icon fab fa-facebook" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Facebook</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="https://plus.google.com/"
+                            
+                                target="_blank"
+                            
+                            rel="noopener"
+                            title="Google +"
+                        >
+                        <i class="sidebar-button-icon fab fa-google-plus" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Google +</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="https://www.linkedin.com/profile/"
+                            
+                                target="_blank"
+                            
+                            rel="noopener"
+                            title="LinkedIn"
+                        >
+                        <i class="sidebar-button-icon fab fa-linkedin" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">LinkedIn</span>
+                    </a>
+            </li>
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="/mailto"
+                            
+                            rel="noopener"
+                            title="Mail"
+                        >
+                        <i class="sidebar-button-icon fa fa-envelope" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">Mail</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+            <ul class="sidebar-buttons">
+            
+                <li class="sidebar-button">
+                    
+                        <a
+                            class="sidebar-button-link "
+                            href="/atom.xml"
+                            
+                            rel="noopener"
+                            title="RSS"
+                        >
+                        <i class="sidebar-button-icon fa fa-rss" aria-hidden="true"></i>
+                        <span class="sidebar-button-desc">RSS</span>
+                    </a>
+            </li>
+            
+        </ul>
+        
+    </div>
+</nav>
+
+            
+            <div id="main" data-behavior="1"
+                 class="
+                        hasCoverMetaIn
+                        ">
+                <section class="postShorten-group main-content-wrap">
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title">
+                    
+                        <a
+                            class="link-unstyled"
+                            href="/2020/11/16/part4/"
+                            aria-label=": RocketMQ"
+                        >
+                            RocketMQ
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time datetime="2020-11-16T18:38:45+08:00">
 	
-	<p class="footerlinks">
-		<a href="#" class="iconfont icon-null"></a>
-		
-            <a href="/" title="facebook" class="iconfont icon-facebook" target="_blank" rel="noopener"> </a>
+		    Nov 16, 2020
+    	
+    </time>
+    
+        <span>in </span>
         
-            <a href="/" title="twitter" class="iconfont icon-twitter" target="_blank" rel="noopener"> </a>
-        
-            <a href="/" title="github" class="iconfont icon-github" target="_blank" rel="noopener"> </a>
-        
-            <a href="/" title="wechat" class="iconfont icon-wechat" target="_blank" rel="noopener"> </a>
-        
-            <a href="mailto:xiaoxiaorr97@gmail.com" title="email" class="iconfont icon-email" target="_blank" rel="noopener"> </a>
-        
-		<a href="#" class="iconfont icon-null"></a>
-	</p>
-	
-    <p id="copyright">
-        &copy; 2020 John Doe.
-        <span> | </span>Powered by <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
-        <span> | </span>Theme <a href="https://github.com/Fechin/hexo-theme-diaspora" title="Diaspora" target="_blank" rel="noopener">Diaspora</a> by Fechin
-		
-		<span> | </span><a rel="nofollow" href="http://www.beian.miit.gov.cn" target="_blank">冀ICP备xxxxxxx号</a>
-		
-    </p>
-</div>
+    <a class="category-link" href="/categories/Java/">Java</a>, <a class="category-link" href="/categories/Java/%E4%B8%AD%E9%97%B4%E4%BB%B6/">中间件</a>
 
-<div id="container">
-    
-<div id="screen">
-    <div id="mark">
-        <div class="layer" data-depth="0.4">
-            <img src="/img/welcome-cover.jpg" id="cover" crossorigin="anonymous" width="1920" height="1080">
-        </div>
-    </div>
-    <div id="vibrant">
-        <svg viewBox="0 0 2880 1620" height="100%" preserveAspectRatio="xMaxYMax slice">
-            <polygon opacity="0.7" points="2000,1620 0,1620 0,0 600,0 "/>
-        </svg>
-        <div></div>
-    </div>
-    <div id="header">
-        <div>
-            <a class="image-logo" href="/"></a>
-			
-            <div class="iconfont icon-menu switchmenu"></div>
-        </div>
-    </div>
-    
-    <div id="post0">
-        <p>十一月 16, 2020</p>
-        <h2><a href="/2020/11/16/part4/" title="RocketMQ" class="posttitle">RocketMQ</a></h2>
-        <p class="summary">RocketMQ简介什么是MQ消息队列（Message Queue），是一种应用程序对应用程序的通信方法，是分布式...</p>
-    </div>
+
     
 </div>
 
-    <div id="primary">
-        
-<div class="post">
-    <a href="/2020/09/16/%E5%8F%A8%E9%80%BC%E5%8F%A8/" title="My awesome title">
-        <img src="http://domain.com/awesome.jpg" class="cover" width="680" height="440">
-    </a>
-    <div class="else">
-        <p>九月 16, 2020</p>
-        <h3><a href="/2020/09/16/%E5%8F%A8%E9%80%BC%E5%8F%A8/" title="My awesome title" class="posttitle">My awesome title</a></h3>
-        <p>xxr’s blogpublic static void main(String[] args)&#123;
-    System.out.println...</p>
-    </div>
-</div>
+            </div>
+            
+                <div class="postShorten-content">
+                    <h1 id="RocketMQ"><a href="#RocketMQ" class="headerlink" title="RocketMQ"></a>RocketMQ</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><h3 id="什么是MQ"><a href="#什么是MQ" class="headerlink" title="什么是MQ"></a>什么是MQ</h3><p>消息队列（Message Queue），是一种应用程序对应用程序的通信方法，是分布式系统的重要组件。</p>
+<h3 id="为何用消息队列"><a href="#为何用消息队列" class="headerlink" title="为何用消息队列"></a>为何用消息队列</h3><ul>
+<li>可以解决一些应用场景的高并发问题。当不需要立即获得结果，但是并发量又需要进行控制的时候，差不多就是需要使用MQ来处理。</li>
+<li>消息队列在实际应用中包括如下四个场景</li>
+<li>应用耦合：多应用间通过消息队列对同一消息进行处理，避免调用接口失败导致整个过程失败；</li>
+<li>异步处理：多应用对消息队列中同一消息进行处理，应用间并发处理消息，相比串行处理，减少处理时间；</li>
+<li>异步处理：多应用对消息队列中同一消息进行处理，应用间并发处理消息，相比串行处理，减少处理时间；</li>
+</ul>
+<h3 id="常见的消息队列有哪些"><a href="#常见的消息队列有哪些" class="headerlink" title="常见的消息队列有哪些"></a>常见的消息队列有哪些</h3><p>当前使用较多的消息队列有RabbitMQ、RocketMQ、ActiveMQ、Kafka、ZeroMQ、MetaMQ等，而部分数据库如Redis、Mysql也可实现消息队列的功能。</p>
+<p>Kafka是LinkedIn开源的分布式发布-订阅消息系统，目前归属于Apache顶级项目。Kafka主要特点是基于Pull的模式来处理消息消费，追求高吞吐量，一开始的目的就是用于日志收集和传输。0.8版本开始支持复制，不支持事务，对消息的重复、丢失、错误没有严格要求，适合产生大量数据的互联网服务的数据收集业务。</p>
+<p>RabbitMQ是使用Erlang语言开发的开源消息队列系统，基于AMQP协议来实现。AMQP的主要特征是面向消息、队列、路由（包括点对点和发布/订阅）、可靠性、安全。AMQP协议更多用在企业系统内，对数据一致性、稳定性和可靠性要求很高的场景，对性能和吞吐量的要求还在其次。</p>
+<p>ActiveMQ是由Apache出品，ActiveMQ 是一个完全支持JMS1.1和J2EE 1.4规范的 JMS Provider实现。它非常快速，支持多种语言的客户端和协议，而且可以非常容易的嵌入到企业的应用环境中，并有许多高级功能。</p>
+<p>RocketMQ是阿里开源的消息中间件，它是纯Java开发，具有高吞吐量、高可用性、适当前使用较多的消息队列有RabbitMQ、RocketMQ、ActiveMQ、Kafka、ZeroMQ、MetaMQ等，而部分数据库如Redis、Mysql也可实现消息队列的功能。</p>
+<p>Kafka是LinkedIn开源的分布式发布-订阅消息系统，目前归属于Apache顶级项目。Kafka主要特点是基于Pull的模式来处理消息消费，追求高吞吐量，一开始的目的就是用于日志收集和传输。0.8版本开始支持复制，不支持事务，对消息的重复、丢失、错误没有严格要求，适合产生大量数据的互联网服务的数据收集业务。</p>
+<p>RabbitMQ是使用Erlang语言开发的开源消息队列系统，基于AMQP协议来实现。AMQP的主要特征是面向消息、队列、路由（包括点对点和发布/订阅）、可靠性、安全。AMQP协议更多用在企业系统内，对数据一致性、稳定性和可靠性要求很高的场景，对性能和吞吐量的要求还在其次。</p>
+<p>ActiveMQ是由Apache出品，ActiveMQ 是一个完全支持JMS1.1和J2EE 1.4规范的 JMS Provider实现。它非常快速，支持多种语言的客户端和协议，而且可以非常容易的嵌入到企业的应用环境中，并有许多高级功能。</p>
+<p>RocketMQ是阿里开源的消息中间件，它是纯Java开发，具有高吞吐量、高可用性、适合大规模分布式系统应用的特点。RocketMQ思路起源于Kafka，但并不是Kafka的一个Copy，它对消息的可靠传输及事务性做了优化，目前在阿里集团被广泛应用于交易、充值、流计算、消息推送、日志流式处理、binglog分发等场景。</p>
+<h3 id="RocketMQ-1"><a href="#RocketMQ-1" class="headerlink" title="RocketMQ"></a>RocketMQ</h3><p>Github 上关于 RocketMQ 的介绍：</p>
+<p>RcoketMQ 是一款低延迟、高可靠、可伸缩、易于使用的消息中间件。具有以下特性：</p>
+<ol>
+<li>支持发布/订阅（Pub/Sub）和点对点（P2P）消息模型</li>
+<li>在一个队列中可靠的先进先出（FIFO）和严格的顺序传递</li>
+<li>支持拉（pull）和推（push）两种消息模式</li>
+<li>单一队列百万消息的堆积能力</li>
+<li>支持多种消息协议，如 JMS、MQTT 等</li>
+<li>分布式高可用的部署架构,满足至少一次消息传递语义</li>
+<li>提供 docker 镜像用于隔离测试和云集群部署</li>
+<li>提供配置、指标和监控等功能丰富的 Dashboard</li>
+</ol>
+<p>官方网站：<a target="_blank" rel="noopener" href="http://rocketmq.apache.org/">http://rocketmq.apache.org/</a></p>
+<p>阿里介绍：<a target="_blank" rel="noopener" href="http://jm.taobao.org/2017/01/12/rocketmq-quick-start-in-10-minutes/">http://jm.taobao.org/2017/01/12/rocketmq-quick-start-in-10-minutes/</a></p>
+<h3 id="安装JDK"><a href="#安装JDK" class="headerlink" title="安装JDK"></a>安装JDK</h3><h4 id="安装Maven"><a href="#安装Maven" class="headerlink" title="安装Maven"></a>安装Maven</h4><ul>
+<li><p>解压包</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar xvf apache-maven-3.6.0-bin.tar.gz</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>移动文件夹到/usr/local目录下</p>
+</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mv apache-maven-3.6.0 /usr/local/</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>修改环境变量</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/profile</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>文件末尾追加</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">export MAVEN_HOME=/usr/local/apache-maven-3.6.0</span><br><span class="line">export MAVEN_HOME</span><br><span class="line">export PATH=$&#123;PATH&#125;:$&#123;MAVEN_HOME&#125;/bin</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>重新刷新配置文件</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>修改配置文件setting.xml</li>
+</ul>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">id</span>&gt;</span>aliyun<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun maven<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/groups/public/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><p>yum -y install git    （直接上传压缩包可以不用安装git）</p>
+<h4 id="下载RockeMQ源码"><a href="#下载RockeMQ源码" class="headerlink" title="下载RockeMQ源码"></a>下载RockeMQ源码</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git clone -b release-4.1.0-incubating https://github.com/apache/incubator-rocketmq.git</span><br><span class="line">cd incubator-rocketmq</span><br></pre></td></tr></table></figure>
+
+<p>此步骤可以文件上传</p>
+<p>如果没有安装unzip 执行：yum -y install unzip</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unzip rocketmq-all-4.3.0-source-release.zip</span><br></pre></td></tr></table></figure>
+
+<h4 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h4><p>在rocket目录下执行</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn -Prelease-all -DskipTests clean install -U</span><br></pre></td></tr></table></figure>
+
+<h4 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h4><p>到编译之后的路径下</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd distribution/target/apache-rocketmq</span><br></pre></td></tr></table></figure>
+
+                    
+                        
 
 
-<div class="post">
-    <a href="/2020/09/13/hello-world/" title="Hello World">
-        <img src="/img/cover.jpg" class="cover" width="680" height="440">
-    </a>
-    <div class="else">
-        <p>九月 13, 2020</p>
-        <h3><a href="/2020/09/13/hello-world/" title="Hello World" class="posttitle">Hello World</a></h3>
-        <p>Welcome to Hexo! This is your very first post. Check documentation for more i...</p>
-    </div>
-</div>
-
-
-<div class="post">
-    <a href="/2020/08/09/README/" title="Untitled">
-        <img src="/img/welcome-cover.jpg" class="cover" width="680" height="440">
-    </a>
-    <div class="else">
-        <p>八月 09, 2020</p>
-        <h3><a href="/2020/08/09/README/" title="Untitled" class="posttitle">Untitled</a></h3>
-        <p>
-
-
-
-  
-        
-    
-  
-        
-    
-  
-        
-    
-    
-        
-    
-   ...</p>
-    </div>
-</div>
-
-
-<div class="post">
-    <a href="/2020/04/16/%E5%B0%8F%E8%AE%B0/" title="没有表达欲">
-        <img src="http://domain.com/awesome.jpg" class="cover" width="680" height="440">
-    </a>
-    <div class="else">
-        <p>四月 16, 2020</p>
-        <h3><a href="/2020/04/16/%E5%B0%8F%E8%AE%B0/" title="没有表达欲" class="posttitle">没有表达欲</a></h3>
-        <p>小记12345var todayMood = &quot;今天学JavaScript，晚上几个小时没写几行代码，心情很差。。。&quot;function...</p>
-    </div>
-</div>
-
-
-<div class="post">
-    <a href="/2019/09/16/%E8%BF%9B%E9%94%80%E5%AD%98%E5%94%AE%E5%90%8E/" title="进销存售后">
-        <img src="http://domain.com/awesome.jpg" class="cover" width="680" height="440">
-    </a>
-    <div class="else">
-        <p>九月 16, 2019</p>
-        <h3><a href="/2019/09/16/%E8%BF%9B%E9%94%80%E5%AD%98%E5%94%AE%E5%90%8E/" title="进销存售后" class="posttitle">进销存售后</a></h3>
-        <p>功能需求售后管理功能模块功能概述用例图
-
-
-主业务流程图
-返厂出库主业务流程图
-
-返厂入库主业务流程图
-
-B2C售后业务主业务流程图
-
-B2B售后更换货主...</p>
-    </div>
-</div>
-
-
-    </div>
-    
-</div>
-<div id="preview"></div>
-
-
-
-</body>
-
-
-<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
-<script src="/js/plugin.js"></script>
-<script src="/js/typed.js"></script>
-<script src="/js/diaspora.js"></script>
-
-
-<link rel="stylesheet" href="/photoswipe/photoswipe.css">
-<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
-
-
-<script src="/photoswipe/photoswipe.min.js"></script>
-<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
-
-
-<!-- Root element of PhotoSwipe. Must have class pswp. -->
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-    <!-- Background of PhotoSwipe. 
-         It's a separate element as animating opacity is faster than rgba(). -->
-    <div class="pswp__bg"></div>
-    <!-- Slides wrapper with overflow:hidden. -->
-    <div class="pswp__scroll-wrap">
-        <!-- Container that holds slides. 
-            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-            Don't modify these 3 pswp__item elements, data is added later on. -->
-        <div class="pswp__container">
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-            <div class="pswp__item"></div>
-        </div>
-        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-        <div class="pswp__ui pswp__ui--hidden">
-            <div class="pswp__top-bar">
-                <!--  Controls are self-explanatory. Order can be changed. -->
-                <div class="pswp__counter"></div>
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-                <button class="pswp__button pswp__button--share" title="Share"></button>
-                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                <!-- element will get class pswp__preloader--active when preloader is running -->
-                <div class="pswp__preloader">
-                    <div class="pswp__preloader__icn">
-                      <div class="pswp__preloader__cut">
-                        <div class="pswp__preloader__donut"></div>
-                      </div>
-                    </div>
+                    
+                    
+                        <p>
+                            <a
+                                href="/2020/11/16/part4/#post-footer"
+                                class="postShorten-excerpt_link link"
+                                aria-label=""
+                            >
+                                Comment and share
+                            </a>
+                        </p>
+                    
                 </div>
-            </div>
-            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                <div class="pswp__share-tooltip"></div> 
-            </div>
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-            <div class="pswp__caption">
-                <div class="pswp__caption__center"></div>
-            </div>
+            
         </div>
+        
+            <a
+                href="/2020/11/16/part4/"
+                aria-label=": RocketMQ"
+            >
+                <div class="postShorten-thumbnailimg">
+                    <img alt="" src=""/>
+                </div>
+            </a>
+            
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title">
+                    
+                        <a
+                            class="link-unstyled"
+                            href="/2020/09/16/%E5%8F%A8%E9%80%BC%E5%8F%A8/"
+                            aria-label=": My awesome title"
+                        >
+                            My awesome title
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time datetime="2020-09-16T18:38:45+08:00">
+	
+		    Sep 16, 2020
+    	
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/Java/">Java</a>, <a class="category-link" href="/categories/Java/Java%E5%9F%BA%E7%A1%80/">Java基础</a>
+
+
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content">
+                    <h3 id="xxr’s-blog"><a href="#xxr’s-blog" class="headerlink" title="xxr’s blog"></a>xxr’s blog</h3><pre><code class="java">public static void main(String[] args)&#123;
+    System.out.println(&quot;hello hexo&quot;);
+&#125;
+
+
+</code></pre>
+
+                    
+                        
+
+
+                    
+                    
+                        <p>
+                            <a
+                                href="/2020/09/16/%E5%8F%A8%E9%80%BC%E5%8F%A8/#post-footer"
+                                class="postShorten-excerpt_link link"
+                                aria-label=""
+                            >
+                                Comment and share
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+            <a
+                href="/2020/09/16/%E5%8F%A8%E9%80%BC%E5%8F%A8/"
+                aria-label=": My awesome title"
+            >
+                <div class="postShorten-thumbnailimg">
+                    <img alt="" src=""/>
+                </div>
+            </a>
+            
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title">
+                    
+                        <a
+                            class="link-unstyled"
+                            href="/2020/09/13/hello-world/"
+                            aria-label=": Hello World"
+                        >
+                            Hello World
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time datetime="2020-09-13T20:30:46+08:00">
+	
+		    Sep 13, 2020
+    	
+    </time>
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content">
+                    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+                    
+                        
+
+
+                    
+                    
+                        <p>
+                            <a
+                                href="/2020/09/13/hello-world/#post-footer"
+                                class="postShorten-excerpt_link link"
+                                aria-label=""
+                            >
+                                Comment and share
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+            <a
+                href="/2020/09/13/hello-world/"
+                aria-label=": Hello World"
+            >
+                <div class="postShorten-thumbnailimg">
+                    <img alt="" src=""/>
+                </div>
+            </a>
+            
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title">
+                    
+                        <a
+                            class="link-unstyled"
+                            href="/2020/08/09/README/"
+                            aria-label=": "
+                        >
+                            (no title)
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time datetime="2020-08-09T18:25:01+08:00">
+	
+		    Aug 09, 2020
+    	
+    </time>
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content">
+                    <p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/20200525115147.png" alt="Logo"></p>
+<br/>
+
+<p align="center">
+  <a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual#%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7">
+        <img src="https://img.shields.io/badge/微信公众号-码出Offer-yellow.svg" alt="License">
+    </a>
+  <a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual#%E8%AF%BB%E8%80%85%E7%A6%8F%E5%88%A9">
+        <img src="https://img.shields.io/badge/读者福利-领取-green.svg" alt="License">
+    </a>
+  <a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20repositories">
+        <img src="https://img.shields.io/badge/Maven仓库-打包 | 查看-orange.svg" alt="License">
+    </a>
+    <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44170221">
+        <img src="https://img.shields.io/badge/CSDN-关注-red.svg" alt="License">
+    </a>
+    <a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual">
+        <img src="https://img.shields.io/badge/System-Building...-inactive.svg" alt="License">
+    </a>
+</p>
+
+
+
+
+
+
+<br />
+
+<br />
+
+<h2 id="📌送给大家的一段话"><a href="#📌送给大家的一段话" class="headerlink" title="📌送给大家的一段话"></a>📌<strong>送给大家的一段话</strong></h2><p><strong>持续努力，变平凡为不凡：</strong> 梦想与现实之间的巨大落差常令人烦躁不安。然而，人生就是”今天”的不断积累，就是“现在”这一刻的不断延续，如此而已。不错过今天，认真工作就能看清明天，明天再认真工作就能看清后面的一周，一周认真工作，就能看清后面的一月…就是说，即使不去探索遥远的未来，只要全身贯注于眼前的每一个瞬间，以前看不清楚的未来的景象就会自然地呈现在你眼前。 与其莫名其妙为明天而烦恼，与其苦思冥想去制定长远的计划，还不如全力过好今天这一天。这才是实现理想最切实的办法。 </p>
+<p align="right">——稻盛和夫《活着》 </p>
+
+<hr>
+<blockquote>
+<p><strong>微信公众号</strong> 搜索关注【<a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual#%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7">码出Offer</a>】领取读者福利和各种学习资源！</p>
+</blockquote>
+<hr>
+<h2 id="📚-JavaSE基础"><a href="#📚-JavaSE基础" class="headerlink" title="📚  JavaSE基础"></a>📚  JavaSE基础</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E7%9A%84%E6%A6%82%E8%BF%B0%E4%B8%8E%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md">Java的概述与环境搭建教程</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E8%AF%AD%E8%A8%80%E5%9F%BA%E7%A1%80.md">Java的语言基础</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E9%80%89%E6%8B%A9%E7%BB%93%E6%9E%84%E4%B8%8E%E5%88%86%E6%94%AF%E7%BB%93%E6%9E%84.md">选择结构与分支结构</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84.md">循环结构和流程控制</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E5%87%BD%E6%95%B0.md">函数调用与递归思想</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E6%95%B0%E7%BB%84.md">一维数组与二维数组</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1.md">面向对象思想、类和构造方法基础</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E4%B8%89%E5%A4%A7%E7%89%B9%E6%80%A7.md">面向对象三大特性（封装、继承、多态）</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E4%B8%89%E4%B8%AA%E4%BF%AE%E9%A5%B0%E7%AC%A6.md">三个修饰符（abstract、static、final）</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E6%8E%A5%E5%8F%A3.md">接口思想和接口回调</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E5%86%85%E9%83%A8%E7%B1%BB%E4%B8%8E%E5%B8%B8%E7%94%A8%E7%B1%BB.md">四大内部类、Object基类、String类</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E9%9B%86%E5%90%88.md">Java集合容器和泛型基础</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E5%BC%82%E5%B8%B8.md">Java的异常处理机制</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E5%A4%9A%E7%BA%BF%E7%A8%8B.md">Java多线程入门</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/JavaIO%E6%B5%81.md">JavaIO流</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E7%BD%91%E7%BB%9C%E7%BC%96%E7%A8%8B.md">Java网络编程</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Junit%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95.md">Junit单元测试</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E5%8F%8D%E5%B0%84%E6%9C%BA%E5%88%B6.md">Java反射机制</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Javadoc%E6%96%87%E6%A1%A3%E7%94%9F%E6%88%90.md">Javadoc文档生成</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E6%B3%A8%E8%A7%A3.md">Java注解</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Standard-Edition/Java%E6%9E%9A%E4%B8%BE.md">Java枚举</a></li>
+</ul>
+<h2 id="🛢数据库"><a href="#🛢数据库" class="headerlink" title="🛢数据库"></a>🛢数据库</h2><ul>
+<li><strong>MySQL数据库</strong> <ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL5.7%E8%A7%A3%E5%8E%8B%E7%89%88%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.md">MySQL5.7解压版安装教程</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93.md">MySQL数据库基础</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL%E5%AD%98%E5%82%A8%E8%BF%87%E7%A8%8B.md">MySQL存储过程编程</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL%E8%A7%A6%E5%8F%91%E5%99%A8.md">MySQL触发器</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/%E6%95%B0%E6%8D%AE%E5%BA%93%E8%8C%83%E5%BC%8F.md">数据库三大范式</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Database/MySQL%E5%9F%BA%E7%A1%80%E6%9E%B6%E6%9E%84.md">MySQL基础架构</a></li>
+<li>MySQL索引</li>
+<li></li>
+</ul>
+</li>
+<li>待添加…..</li>
+</ul>
+<h2 id="🎨前端开发"><a href="#🎨前端开发" class="headerlink" title="🎨前端开发"></a>🎨前端开发</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/HTML%E5%92%8CCSS%E5%9F%BA%E7%A1%80.md">HTML和CSS基础</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F.md">正则表达式</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/JavaScript%E5%9F%BA%E7%A1%80%E4%B9%8BECMAScript.md">JavaScript基础之ECMAScript</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/JavaScript%E4%B9%8BBOM%E5%92%8CDOM%E6%93%8D%E4%BD%9C.md">JavaScript之BOM和DOM操作</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/JSON.md">JSON</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/Ajax.md">原生Ajax异步请求</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/jQuery.md">jQuery（包含jQuery Ajax）</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/Bootstrap.md">Bootstrap</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/BootstrapValidator%E6%A0%A1%E9%AA%8C.md">BootstrapValidator校验</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Frontend-Development/Echarts.md">Echarts统计图表</a></li>
+<li>待添加……</li>
+</ul>
+<h2 id="💾WebServer"><a href="#💾WebServer" class="headerlink" title="💾WebServer"></a>💾WebServer</h2><ul>
+<li><strong>tomact服务器</strong> <ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Server/tomact%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%9F%BA%E7%A1%80%E5%92%8C%E5%BC%80%E5%8F%91%E6%AD%A5%E9%AA%A4.md">tomact服务器基础和开发步骤</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Server/%E8%A7%A3%E5%86%B3tomact%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%B8%8EIDEA%E7%9A%84%E4%B8%80%E7%B3%BB%E5%88%97%E4%B9%B1%E7%A0%81%E9%97%AE%E9%A2%98.md">解决tomact客户端与IDEA的一系列乱码问题</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="📡计算机网络"><a href="#📡计算机网络" class="headerlink" title="📡计算机网络"></a>📡计算机网络</h2><ul>
+<li><strong>网络协议</strong> <ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Computer-Networks/HTTP%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE.md">HTTP网络协议</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="💻-JavaWeb基础"><a href="#💻-JavaWeb基础" class="headerlink" title="💻  JavaWeb基础"></a>💻  JavaWeb基础</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/JavaWeb%E9%98%B6%E6%AE%B5%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB%E5%9B%BE.md">JavaWeb阶段知识体系图（总结）</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/JDBC%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5.md">JDBC数据库连接</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/Servlet%E5%9F%BA%E7%A1%80.md">Servlet基础</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/Servlet%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86.md">Servlet状态管理（Cookie、Session、ServletContext、Request）</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/BaseServlet%E6%A8%A1%E6%9D%BF.md">BaseServlet模板</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/Filter%E8%BF%87%E6%BB%A4%E5%99%A8.md">Filter过滤器</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/Listener%E7%9B%91%E5%90%AC%E5%99%A8.md">Listener监听器</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/JSP.md">JSP开发（EL表达式、JSTL标签库、分页）</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/Java-Web/%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%92%8C%E6%96%87%E4%BB%B6%E4%B8%8B%E8%BD%BD.md">文件上传和文件下载</a></li>
+<li>……</li>
+</ul>
+<h2 id="🆒Maven仓库"><a href="#🆒Maven仓库" class="headerlink" title="🆒Maven仓库"></a>🆒Maven仓库</h2><blockquote>
+<p>针对处在学习阶段的童鞋们，在此项目中建立了一个简单的jar包库，里面存储了学习阶段常用的jar包对应jar包的Utils工具类和配置文件，而且对jar包做了一系列使用说明。</p>
+<p>如果有需要下载jar包，点击Logo图标下的<code>Maven仓库</code>即可进入，也可以<a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/tree/master/jar%20repositories"><strong>点击此处</strong></a>进入！</p>
+<p><strong>声明：</strong> 后期我们是通过Maven来引入依赖来实现jar包在项目中的使用，毕竟大家都得有一个循序渐进的学习过程，在使用Maven之前我们还是需要使用jar文件的。即使不使用jar文件，我们也得了解所需jar包的作用对吧，所以我建立了一个简单的jar包库来引导学习！</p>
+</blockquote>
+<ul>
+<li><strong>打包Maven本地仓库：</strong> 链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1pURaTi6RI3RGjgf7vgfIwQ">https://pan.baidu.com/s/1pURaTi6RI3RGjgf7vgfIwQ</a> 提取码：hk17</li>
+<li><strong>IDEA破解jar文件：</strong> 链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1ixgXOqxsbieWd8W8sJ9fQw">https://pan.baidu.com/s/1ixgXOqxsbieWd8W8sJ9fQw</a> 提取码：xbmr</li>
+</ul>
+<h2 id="🛠必会工具"><a href="#🛠必会工具" class="headerlink" title="🛠必会工具"></a>🛠必会工具</h2><ul>
+<li><strong>项目构建工具Maven</strong> <ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/Maven%E5%BA%94%E7%94%A8.md">Maven应用</a></li>
+</ul>
+</li>
+<li><strong>版本控制工具Git</strong> <ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/Git%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B.md">Git安装教程</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/Git%E5%BA%94%E7%94%A8.md">Git应用</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/.gitignore%E6%A8%A1%E6%9D%BF.txt">.gitignore模板（Java）</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/developer-tools/%E8%A7%A3%E5%86%B3GitHub%E5%90%84%E7%A7%8D%E7%BC%93%E6%85%A2%E9%97%AE%E9%A2%98.md">解决GitHub各种缓慢问题方案</a></li>
+</ul>
+</li>
+<li>待添加……</li>
+</ul>
+<h2 id="🗜框架"><a href="#🗜框架" class="headerlink" title="🗜框架"></a>🗜框架</h2><ul>
+<li><strong>MyBatis</strong> <ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/MyBatis%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B.md">MyBatis基础开发流程</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/MyBatis%E6%A1%86%E6%9E%B6%E9%AB%98%E7%BA%A7%E5%BA%94%E7%94%A8.md">MyBatis高级应用</a></li>
+</ul>
+</li>
+<li><strong>Spring</strong> <ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/Spring%E5%9F%BA%E6%9C%AC%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA.md">Spring概述和基本环境搭建</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/SpringIOC.md">Spring IOC（控制反转）</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/SpringDI.md">Spring DI（依赖注入）</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/SpringAOP.md">Spring AOP（面向切面编程）</a></li>
+<li>待添加……</li>
+</ul>
+</li>
+<li><strong>SpringMVC</strong> <ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/SpringMVC%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B.md">SpringMVC执行流程（源码分析）</a></li>
+<li>待添加……</li>
+</ul>
+</li>
+<li><strong>SSM</strong> <ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/SSM%E6%A1%86%E6%9E%B6%E6%95%B4%E5%90%88.md">SSM框架整合</a></li>
+</ul>
+</li>
+<li><strong>SpringBoot</strong> <ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/frame/Springboot%E5%85%A5%E9%97%A8.md">Springboot入门</a></li>
+<li>Springboot整合</li>
+<li>待添加……</li>
+</ul>
+</li>
+</ul>
+<h2 id="⌨操作系统"><a href="#⌨操作系统" class="headerlink" title="⌨操作系统"></a>⌨操作系统</h2><ul>
+<li><strong>Linux</strong> <ul>
+<li>虚拟机与Linux安装教程（待添加……）</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/operating-system/Linux%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8.md">Linux命令大全</a></li>
+<li>待添加……</li>
+</ul>
+</li>
+</ul>
+<h2 id="🗡中间件"><a href="#🗡中间件" class="headerlink" title="🗡中间件"></a>🗡中间件</h2><ul>
+<li><strong>Nginx</strong> <ul>
+<li>待添加……</li>
+</ul>
+</li>
+<li><strong>Redis</strong> <ul>
+<li>待添加……</li>
+</ul>
+</li>
+<li>待添加……</li>
+</ul>
+<h2 id="🏹分布式架构"><a href="#🏹分布式架构" class="headerlink" title="🏹分布式架构"></a>🏹分布式架构</h2><ul>
+<li>待添加……</li>
+</ul>
+<h2 id="⚔微服务架构"><a href="#⚔微服务架构" class="headerlink" title="⚔微服务架构"></a>⚔微服务架构</h2><ul>
+<li>待添加……</li>
+</ul>
+<h2 id="🔐并发编程"><a href="#🔐并发编程" class="headerlink" title="🔐并发编程"></a>🔐并发编程</h2><ul>
+<li><strong>多线程基础</strong> <ul>
+<li>待添加……</li>
+</ul>
+</li>
+<li>ThreadLocal源码分析</li>
+</ul>
+<h2 id="🔧IntelliJ-IDEA"><a href="#🔧IntelliJ-IDEA" class="headerlink" title="🔧IntelliJ IDEA"></a>🔧IntelliJ IDEA</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/IntelliJ-IDEA/IDEA%E5%AE%89%E8%A3%85%E7%A0%B4%E8%A7%A3%E6%95%99%E7%A8%8B.md">IDEA安装破解教程（勿传播）</a></li>
+<li>等待添加各种快捷键、常用设置、插件教程等等……</li>
+</ul>
+<h2 id="📐设计模式"><a href="#📐设计模式" class="headerlink" title="📐设计模式"></a>📐设计模式</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/design-mode/00.%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E5%9F%BA%E7%A1%80.md">00-设计模式基础</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/blob/master/docs/design-mode/01.%E5%8D%95%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F.md">01-单例设计模式</a></li>
+<li>待添加第二设计模式……</li>
+</ul>
+<h2 id="🏆Project"><a href="#🏆Project" class="headerlink" title="🏆Project"></a>🏆Project</h2><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/tree/master/project/JavaWeb%E5%A9%9A%E7%A4%BC%E6%B1%87">【婚礼汇】（Servlet+JSP）</a></li>
+<li><a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual/tree/master/project/%E5%B0%8F%E7%B1%B3%E5%95%86%E5%9F%8E">【小米商城】（Servlet+JSP）</a></li>
+</ul>
+<h2 id="⏳数据结构与算法"><a href="#⏳数据结构与算法" class="headerlink" title="⏳数据结构与算法"></a>⏳数据结构与算法</h2><ul>
+<li>复杂度分析</li>
+<li>待添加……</li>
+</ul>
+<h2 id="📃LICENSE"><a href="#📃LICENSE" class="headerlink" title="📃LICENSE"></a>📃LICENSE</h2><blockquote>
+<p>本仓库知识体系受版权保护，大多数知识体系和技术文章都是由个人总结、整理、发文。如果您想引用本仓库知识内容或者对本仓库知识内容做了修改演绎时，请在文章开头明显处标明作者和本仓库地址，整理总结发文不易，请尊重原创！谢谢！</p>
+<p>公众号或与其他形式转载请联系   <strong>Email：</strong> ziphtracks@163.com</p>
+</blockquote>
+<h2 id="👣我的足迹"><a href="#👣我的足迹" class="headerlink" title="👣我的足迹"></a>👣我的足迹</h2><blockquote>
+<p>以下足迹创建时间先后不一，所以文章也不太一致，最早的是<strong>CSDN</strong> ，大家可以去逛逛！</p>
+<p>我会持续输出的，希望大家能多多关照，能够进去给我一个三连！</p>
+</blockquote>
+<ul>
+<li><strong>微信公众号：</strong> <a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual#%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7">码出Offer</a></li>
+<li><strong>GitHub：</strong> <a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual">https://github.com/Ziphtracks/JavaLearningmanual</a></li>
+<li><strong>CSDN：</strong> <a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44170221">https://blog.csdn.net/weixin_44170221</a></li>
+<li><strong>掘金：</strong> <a target="_blank" rel="noopener" href="https://juejin.im/user/5e89c749f265da47f256085e">https://juejin.im/user/5e89c749f265da47f256085e</a></li>
+<li><strong>知乎：</strong> <a target="_blank" rel="noopener" href="https://www.zhihu.com/people/ziph">https://www.zhihu.com/people/ziph</a></li>
+<li><strong>博客园：</strong> <a target="_blank" rel="noopener" href="https://www.cnblogs.com/ziph/">https://www.cnblogs.com/ziph/</a></li>
+<li><strong>ProcessOn：</strong> <a target="_blank" rel="noopener" href="https://www.processon.com/u/5e3b6d68e4b0a3daae7d2de8/profile">https://www.processon.com/u/5e3b6d68e4b0a3daae7d2de8/profile</a></li>
+</ul>
+<h2 id="📩微信公众号"><a href="#📩微信公众号" class="headerlink" title="📩微信公众号"></a>📩微信公众号</h2><blockquote>
+<p>关于PDF版本文章电子书以及其他福利资料的的领取，请扫码关注微信公众号：<strong>码出Offer</strong>  </p>
+</blockquote>
+<p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200614165831.png" alt="微信公众号"></p>
+
+<h2 id="🎁读者福利"><a href="#🎁读者福利" class="headerlink" title="🎁读者福利"></a>🎁读者福利</h2><blockquote>
+<p>涉及到侵犯您的权力，请速与我联系，我将立即删除您的内容！<strong>Email：</strong> ziphtracks@163.com</p>
+</blockquote>
+<ul>
+<li><strong>自制电子书：</strong> 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1MCpGsrUR0TaBaDv8_G3OtA">https://pan.baidu.com/s/1MCpGsrUR0TaBaDv8_G3OtA</a> 提取码: sdby</li>
+<li><strong>学习辅助资料：</strong> 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1vXPe4uGkNhkm6AJ3xIRAvA">https://pan.baidu.com/s/1vXPe4uGkNhkm6AJ3xIRAvA</a> 提取码: chft</li>
+<li><strong>PDF版书籍：</strong> 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1eImeF0EkQBJonPOKsZGGcA">https://pan.baidu.com/s/1eImeF0EkQBJonPOKsZGGcA</a> 提取码: 3845</li>
+<li><strong>优质资料：</strong> <ul>
+<li><strong>丁奇MySQL实战45讲：</strong> 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1BQ4Eyv_hN5Jp6gVlrafqkA">https://pan.baidu.com/s/1BQ4Eyv_hN5Jp6gVlrafqkA</a> 提取码: s1ax</li>
+<li><strong>数据结构与算法之美：</strong> 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1Z0KW2v03s3x4zBwL6N_ZYA">https://pan.baidu.com/s/1Z0KW2v03s3x4zBwL6N_ZYA</a> 提取码: pfsp</li>
+<li><strong>Java核心技术36讲：</strong> 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1Cwtjg4z8lePuFF4RY-q_6A">https://pan.baidu.com/s/1Cwtjg4z8lePuFF4RY-q_6A</a> 提取码: x2ir</li>
+<li><strong>趣谈网络协议：</strong> 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1bqKsGlLvhKfo8VSlbflNxw">https://pan.baidu.com/s/1bqKsGlLvhKfo8VSlbflNxw</a> 提取码: n5uj</li>
+<li><strong>马士兵老师讲解设计模式：</strong> 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1JeWLd_9hbeKjHe8gTYze0g">https://pan.baidu.com/s/1JeWLd_9hbeKjHe8gTYze0g</a> 提取码: rr3d</li>
+</ul>
+</li>
+<li><strong>项目资源：</strong> <ul>
+<li><strong>小米商城项目：</strong> 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1LZQekIzA3KYjvwjy8hjIgA">https://pan.baidu.com/s/1LZQekIzA3KYjvwjy8hjIgA</a> 提取码: fa5g</li>
+</ul>
+</li>
+<li>持续向网盘内添加更新福利资源（Star和微信公众号关注一波好吗？兄弟姐妹们~）……</li>
+</ul>
+<h2 id="⚡充电打赏"><a href="#⚡充电打赏" class="headerlink" title="⚡充电打赏"></a>⚡充电打赏</h2><blockquote>
+<p>如果大家觉得文章还觉得不错，对你有所帮助的话。可以请Z哥喝一杯速溶咖啡哦！礼轻情意重嘛对不对！你的充电打赏，将是我创作的一大动力！Thank You！</p>
+<p><strong>郑重声明：</strong> Z哥，不接受没有收入来源的任何充电打赏，比如：还正在花着父母辛苦钱的学生，一旦打赏请速与我联系！</p>
+</blockquote>
+<p align="center"><img src="https://gitee.com/Ziphtracks/Figurebed/raw/master/img/1/20200614174007.jpg" alt="微信赞赏码"></p>
+
+<h2 id="🙏鸣谢"><a href="#🙏鸣谢" class="headerlink" title="🙏鸣谢"></a>🙏鸣谢</h2><blockquote>
+<p>如果<a target="_blank" rel="noopener" href="https://github.com/Ziphtracks/JavaLearningmanual">JavaLearningmanual</a>中出现错误，请与我联系。如果建议或提议十分不错，予以采纳，我将给予适当的物质奖励，并将你纳入贡献者名单！提出小错误或小的建议也是OK的哦，也会纳入名单的哦！毕竟人无完人，也许写错别字或者知识琐碎问题对吧！期待你的来信！</p>
+</blockquote>
+<p>暂无无  </p>
+
+                    
+                        
+
+
+                    
+                    
+                        <p>
+                            <a
+                                href="/2020/08/09/README/#post-footer"
+                                class="postShorten-excerpt_link link"
+                                aria-label=""
+                            >
+                                Comment and share
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+            <a
+                href="/2020/08/09/README/"
+                aria-label=": "
+            >
+                <div class="postShorten-thumbnailimg">
+                    <img alt="" src=""/>
+                </div>
+            </a>
+            
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title">
+                    
+                        <a
+                            class="link-unstyled"
+                            href="/2020/04/16/%E5%B0%8F%E8%AE%B0/"
+                            aria-label=": 没有表达欲"
+                        >
+                            没有表达欲
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time datetime="2020-04-16T18:38:45+08:00">
+	
+		    Apr 16, 2020
+    	
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/Java/">Java</a>, <a class="category-link" href="/categories/Java/Java%E5%9F%BA%E7%A1%80/">Java基础</a>
+
+
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content">
+                    <h2 id="小记"><a href="#小记" class="headerlink" title="小记"></a>小记</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> todayMood = <span class="string">&quot;今天学JavaScript，晚上几个小时没写几行代码，心情很差。。。&quot;</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">myDay</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">  <span class="built_in">document</span>.write(todayMood);</span><br><span class="line">&#125;</span><br><span class="line">myDay();</span><br></pre></td></tr></table></figure>
+
+
+                    
+                        
+
+
+                    
+                    
+                        <p>
+                            <a
+                                href="/2020/04/16/%E5%B0%8F%E8%AE%B0/#post-footer"
+                                class="postShorten-excerpt_link link"
+                                aria-label=""
+                            >
+                                Comment and share
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+            <a
+                href="/2020/04/16/%E5%B0%8F%E8%AE%B0/"
+                aria-label=": 没有表达欲"
+            >
+                <div class="postShorten-thumbnailimg">
+                    <img alt="" src=""/>
+                </div>
+            </a>
+            
+        
+    </article>
+    
+    
+    <article class="postShorten postShorten--thumbnailimg-bottom">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title">
+                    
+                        <a
+                            class="link-unstyled"
+                            href="/2019/09/16/%E8%BF%9B%E9%94%80%E5%AD%98%E5%94%AE%E5%90%8E/"
+                            aria-label=": 进销存售后"
+                        >
+                            进销存售后
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
+    <time datetime="2019-09-16T18:38:45+08:00">
+	
+		    Sep 16, 2019
+    	
+    </time>
+    
+        <span>in </span>
+        
+    <a class="category-link" href="/categories/%E9%A1%B9%E7%9B%AE/">项目</a>, <a class="category-link" href="/categories/%E9%A1%B9%E7%9B%AE/%E9%A1%B9%E7%9B%AE/">项目</a>
+
+
+    
+</div>
+
+            </div>
+            
+                <div class="postShorten-content">
+                    <h1 id="功能需求"><a href="#功能需求" class="headerlink" title="功能需求"></a>功能需求</h1><h2 id="售后管理功能模块"><a href="#售后管理功能模块" class="headerlink" title="售后管理功能模块"></a>售后管理功能模块</h2><h3 id="功能概述"><a href="#功能概述" class="headerlink" title="功能概述"></a>功能概述</h3><p>用例图</p>
+<img src="进销存售后.assets/售后用例图.png"/>
+
+<p><strong>主业务流程图</strong></p>
+<p>返厂出库主业务流程图</p>
+<p><img src="%E8%BF%9B%E9%94%80%E5%AD%98%E5%94%AE%E5%90%8E.assets/%E5%9C%96%E7%89%871.png"></p>
+<p>返厂入库主业务流程图</p>
+<p><img src="%E8%BF%9B%E9%94%80%E5%AD%98%E5%94%AE%E5%90%8E.assets/%E8%BF%94%E5%8E%82%E5%85%A5%E5%BA%93%E4%B8%BB%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E5%9B%BE.png"></p>
+<p>B2C售后业务主业务流程图</p>
+<p><img src="%E8%BF%9B%E9%94%80%E5%AD%98%E5%94%AE%E5%90%8E.assets/B2C%E5%94%AE%E5%90%8E%E4%B8%9A%E5%8A%A1%E4%B8%BB%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E5%9B%BE.png"></p>
+<p>B2B售后更换货主业务流程图</p>
+<p><img src="%E8%BF%9B%E9%94%80%E5%AD%98%E5%94%AE%E5%90%8E.assets/B2B%E5%94%AE%E5%90%8E%E6%9B%B4%E6%8D%A2%E8%B4%A7%E4%B8%BB%E4%B8%9A%E5%8A%A1%E6%B5%81%E7%A8%8B%E5%9B%BE.png"></p>
+
+                    
+                        
+
+
+                    
+                    
+                        <p>
+                            <a
+                                href="/2019/09/16/%E8%BF%9B%E9%94%80%E5%AD%98%E5%94%AE%E5%90%8E/#post-footer"
+                                class="postShorten-excerpt_link link"
+                                aria-label=""
+                            >
+                                Comment and share
+                            </a>
+                        </p>
+                    
+                </div>
+            
+        </div>
+        
+            <a
+                href="/2019/09/16/%E8%BF%9B%E9%94%80%E5%AD%98%E5%94%AE%E5%90%8E/"
+                aria-label=": 进销存售后"
+            >
+                <div class="postShorten-thumbnailimg">
+                    <img alt="" src=""/>
+                </div>
+            </a>
+            
+        
+    </article>
+    
+    <div class="pagination-bar">
+    <ul class="pagination">
+        
+        
+        <li class="pagination-number">page 1 of 1</li>
+    </ul>
+</div>
+
+</section>
+
+
+                <footer id="footer" class="main-content-wrap">
+    <span class="copyrights">
+        Copyrights &copy; 2021 John Doe. All Rights Reserved.
+    </span>
+</footer>
+
+            </div>
+            
+        </div>
+        
+
+
+<div id="about">
+    <div id="about-card">
+        <div id="about-btn-close">
+            <i class="fa fa-times"></i>
+        </div>
+        
+            <h4 id="about-card-name">John Doe</h4>
+        
+            <div id="about-card-bio"><p>author.bio</p>
+</div>
+        
+        
+            <div id="about-card-job">
+                <i class="fa fa-briefcase"></i>
+                <br/>
+                <p>author.job</p>
+
+            </div>
+        
+        
     </div>
 </div>
 
+        
+        
+<div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+        <!--SCRIPTS-->
+
+<script src="/assets/js/jquery.js"></script>
+
+
+<script src="/assets/js/jquery.fancybox.js"></script>
+
+
+<script src="/assets/js/thumbs.js"></script>
+
+
+<script src="/assets/js/tranquilpeak.js"></script>
+
+<!--SCRIPTS END-->
 
 
 
 
 
+    </body>
 </html>
