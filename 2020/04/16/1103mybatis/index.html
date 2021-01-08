@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Mybatis2 - Hexo</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="1.SqlSessionFactoryBuilder.build()
+​    XmlConfigBuilder.parse()解析配置文件到Configuration对象.
+​    new De,"> 
+    <meta name="author" content="John Doe"> 
+    <link rel="alternative" href="atom.xml" title="Hexo" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+<meta name="generator" content="Hexo 5.1.1"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">Hexo</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://example.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">Mybatis2</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">Mybatis2</h1>
+        <div class="stuff">
+            <span>四月 16, 2020</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E6%A0%87%E7%AD%BE1/" rel="tag">标签1</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <p>1.SqlSessionFactoryBuilder.build()</p>
+<p>​    XmlConfigBuilder.parse()解析配置文件到Configuration对象.</p>
+<p>​    new DefaultSqlSessionFactory(configuration)</p>
+<p>2.SqlSessionFactory–&gt;DefaultSqlSessionFactory</p>
+<p>​    持有了Configuration</p>
+<p>​    全局唯一。</p>
+<p>​    openSession–&gt;new DefaultSqlSession(configuration)</p>
+<p>3.SqlSession–&gt;DefaultSqlSession</p>
+<p>​    getMapper–&gt;传入mapper接口的类对象，返回的代理对象</p>
+<p>4.映射文件:</p>
+<p>​    <mapper namespace="mapper接口的全名"></p>
+<p>​        <select id="" parameterType="" resultType=""></p>
+<h1 id="1103mybatis"><a href="#1103mybatis" class="headerlink" title="1103mybatis"></a>1103mybatis</h1><h3 id="1-insert-update-delete标签"><a href="#1-insert-update-delete标签" class="headerlink" title="1.insert|update|delete标签"></a>1.insert|update|delete标签</h3><p>​    对应的映射文件中的标签名即：insert|update|delete</p>
+<p>​    这三个标签没有resultType返回值属性,对应的mapper接口中的方法返回值时int。</p>
+<p>​    对应insert操作，数据库主键自增，执行useGeneratedKeys=true，keyProperty=”属性名”可以得到新增记录的id</p>
+<h3 id="2-sql标签"><a href="#2-sql标签" class="headerlink" title="2.sql标签"></a>2.sql标签</h3><p>​    定义公共的sql语句块,在select语句中通过inclue引入sql块</p>
+<h3 id="3-resultMap标签"><a href="#3-resultMap标签" class="headerlink" title="3.resultMap标签"></a>3.resultMap标签</h3><p>​    结果集映射标签</p>
+<p>​    场景1：数据库字段名与实体类属性名不一致；</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">&quot;userResultMap&quot;</span> <span class="attr">type</span>=<span class="string">&quot;sysuser&quot;</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">id</span> <span class="attr">column</span>=<span class="string">&quot;uid&quot;</span> <span class="attr">property</span>=<span class="string">&quot;uid&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">id</span>&gt;</span><span class="comment">&lt;!--对主键列做映射--&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">result</span> <span class="attr">column</span>=<span class="string">&quot;uname&quot;</span> <span class="attr">property</span>=<span class="string">&quot;uname&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">result</span>&gt;</span><span class="comment">&lt;!--对非主键列做映射--&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">result</span> <span class="attr">column</span>=<span class="string">&quot;upwd&quot;</span> <span class="attr">property</span>=<span class="string">&quot;upwd&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">result</span>&gt;</span><span class="comment">&lt;!--对非主键列做映射--&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">result</span> <span class="attr">column</span>=<span class="string">&quot;create_time&quot;</span> <span class="attr">property</span>=<span class="string">&quot;createTime&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">result</span>&gt;</span><span class="comment">&lt;!--对非主键列做映射--&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">result</span> <span class="attr">column</span>=<span class="string">&quot;update_time&quot;</span> <span class="attr">property</span>=<span class="string">&quot;updateTime&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">result</span>&gt;</span><span class="comment">&lt;!--对非主键列做映射--&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>​    </p>
+<p>​    select标签中的resultType与resultMap不能同时使用。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectUserByKey&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;int&quot;</span> <span class="attr">resultMap</span>=<span class="string">&quot;userResultMap&quot;</span>&gt;</span></span><br><span class="line">      select</span><br><span class="line">       <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;allFields&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">include</span>&gt;</span></span><br><span class="line">       from sysuser where uid=#&#123;uid&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="4-对象关联查询"><a href="#4-对象关联查询" class="headerlink" title="4.对象关联查询"></a>4.对象关联查询</h3><p>​    resultMap标签的应用场景2：</p>
+<p>持有关系：数据库表层面的N-1关系.例子：查询用户对象时，需要得到用户的角色信息。</p>
+<p>mybatis内使用association实现对象持有关系的级联查询。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;association property&#x3D;&quot;持有对象的属性名&quot; column&#x3D;&quot;数据库表的外键列&quot; javaType&#x3D;&quot;持有对象的类型&quot; select&#x3D;&quot;二次查询的位置&quot;&gt;&lt;&#x2F;association&gt;</span><br></pre></td></tr></table></figure>
+
+<p>建议自己手工去多次查询不同表，再把查询结果组合。</p>
+<p>聚合关系：数据库层面的1-N关系，例子：查询角色，并查询角色下的所有用户。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">collection</span> <span class="attr">property</span>=<span class="string">&quot;聚合对象的属性名&quot;</span> <span class="attr">column</span>=<span class="string">&quot;外键列&quot;</span>  <span class="attr">ofType</span>=<span class="string">&quot;集合的泛型类型&quot;</span> <span class="attr">select</span>=<span class="string">&quot;二次查询的位置&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">collection</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>建议自己手工去多次查询不同表，再把查询结果组合。</p>
+<h3 id="5-cache标签"><a href="#5-cache标签" class="headerlink" title="5.cache标签"></a>5.cache标签</h3><p>​    使用不重要，重点在于缓存的概念.</p>
+<p>​    数据缓存的目的：提高查询效率，依赖内存减少数据库查询。</p>
+<p>​    使用缓存的注意点：缓存中的数据有效期，</p>
+<p>mybatis的缓存分两个级别：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">session级别的缓存：数据缓存在session对象中.默认启用的session级别的缓存，同一个会话中相同的查询会触发缓存中数据。</span><br><span class="line"></span><br><span class="line">sessionFactory级别的缓存：数据缓存在sessionFactory对象中.不同的会话中相同的查询也会触发缓存中数据。默认没有开启二级缓存。</span><br><span class="line">在xml映射文件加入cache 标签，表示当前namespace下的所有查询操作默认都使用二级缓存。</span><br><span class="line"> &lt;cache eviction&#x3D;&quot;FIFO&quot;</span><br><span class="line">           flushInterval&#x3D;&quot;60000&quot;</span><br><span class="line">           size&#x3D;&quot;512&quot;</span><br><span class="line">           readOnly&#x3D;&quot;true&quot;&#x2F;&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>缓存的标准套路：先查缓存，缓存中没有再查数据库，把查询结果放缓存；缓存中有数据，直接返回。</p>
+<h3 id="6-延迟加载思想"><a href="#6-延迟加载思想" class="headerlink" title="6.延迟加载思想"></a>6.延迟加载思想</h3><p>​    延迟加载的目的：提高查询效率，减少用户的操作响应时间。分页，移动端，web端图片。</p>
+<p>​    mybatis中的lazyload：只应用的对象的关联查询中,有二次查询。</p>
+<p>​    系统开发时，一次返回给用户的数据量只要上两位数，就要延迟加载。</p>
+<h3 id="7-代理模式proxy"><a href="#7-代理模式proxy" class="headerlink" title="7.代理模式proxy"></a>7.代理模式proxy</h3><p>​    有什么用：当已经存在一个对象，该对象中的某个方法不满足场景需求的时候，需要去扩展改变这个方法,需要考虑到代理模式。</p>
+<p>​    比如：Connection conn = DriverlManager.getConnection()；</p>
+<p>​                   conn对象的close方法不满足场景需求，该方法正常是在关闭连接。</p>
+<p>​           如果场景是使用连接池，希望用完的connection对象close时候，不要关闭连接，而是把该对象放回连接池。</p>
+<p>代理模式中的对象：</p>
+<p>​    原对象（被代理对象）</p>
+<p>​    代理对象</p>
+<p>静态代理模式：代理对象与被代理对象同类型；代理对象要持有被代理对象</p>
+<p>动态代理模式：代理类不用我们手工创建，jvm在运行时在内存中动态创建代理类。</p>
+<p>​    自动创建的代理类：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">public class $Proxy0 extends Proxy implements ISource&#123;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public class Proxy&#123;</span><br><span class="line">    </span><br><span class="line">    protected InvocationHandler h;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>注意点：Proxy创建代理类要求被代理对象必须有接口。</p>
+<p>总结：</p>
+<p>mybatis需要你会的东西：</p>
+<p>​    四个select|insert|update|delete</p>
+<p>​    一个表达式:#{}</p>
+<p>​    动态sql：</p>
+<p>​    一个方法:getMapper()</p>
+<p>​    一个模式:代理模式</p>
+<p>晚上练习：</p>
+<p>​    建立角色表，建立权限表，两表多对多关系.</p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="http://domain.com/awesome.mp3">
+            </audio>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+		data-enable='false'
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
